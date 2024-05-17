@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import headerImage1 from '../images/img1.jpg';
+import headerImage1 from '../images/img10.jpeg';
 import headerImage2 from '../images/img9.jpeg';
 import headerImage3 from '../images/img3.jpg';
 
@@ -10,7 +10,7 @@ const Home = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImage(prevImage => (prevImage + 1) % images.length);
-    }, 3000);
+    }, 4000);
 
     return () => clearInterval(interval);
   }, []);
