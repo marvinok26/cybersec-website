@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Poppins", sans-serif;
+  background: var(--color-bg);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--color-gray-700);
+}
+
+
+
+
+
+
+/*==================================================NAVBAR==========================================*/
+.header {
+  background-color: #0A1F32;
+  color: #fff;
+  padding: 5px 0;
+}
+
+.logo-and-nav {
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+ margin-left: 10rem;
+  padding: 0;;
+}
+
+.navbar {
+  display: flex;
+  justify-content:center;
+  margin-left: -9rem;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar li {
+  margin: 0 10px;
+  position: relative;
+}
+
+.navbar li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #0A1F32;
+  border-radius: 4px;
+  padding: 10px 0;
+  left: 0; /* Ensure dropdown menu starts from the left edge of the dropdown item */
+  top: calc(100% + 5px); /* Position the dropdown menu just below the dropdown item */
+  min-width: 160px; /* Set a minimum width for the dropdown menu */
+}
+
+.dropdown-menu a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Centering dropdown menu */
+.dropdown-menu {
+  transform: translateX(-50%);
+  left: 50%; /* Position the dropdown menu at the center horizontally */
+}
+
+
+/* Optional: Hover effect on links */
+.navbar li:hover a {
+  background-color: #0A1F40;
+}
+
+/* ==============================================HEADER================================== */
+.home-contents {
+  height: 390px;
+  display: flex;
+  flex-direction: row; /* Ensures contents are laid out horizontally */
+  background-color: #0A1F32;
+}
+
+.sliding-text {
+  flex: 1; /* Take up remaining space */
+  padding: 20px;
+  animation: slideIn 2s ease forwards; /* Animation for sliding in */
+  color: #fff;
+  margin-top: 4rem;
+  margin-left: 10rem;
+}
+
+.sliding-text h1{
+  font-size: 35px;
+}
+
+.sliding-text p{
+  font-size: 12px;
+  font-weight: lighter;
+}
+
+.sliding-text h1,
+.sliding-text p {
+  width: 600px; /* Set width */
+  height: 115px; /* Set height */
+  overflow: hidden; /* Hide any content exeding the specified dimensions */
+   margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.header-image {
+  position: absolute;
+  top: 0.7rem;
+  right: 0.8rem; /* Position the image to the right */
+  bottom: 0; /* Stretch the image to cover the entire height of home-contents */
+  width: 400px; /* Fixed width */
+  height: 450px; /* Occupy full height of home-contents */
+}
+
+.header-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio and cover container */
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Optional: Adjust styling for button */
+.btn-show__more {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.container2{
+  padding: 30px;
+  text-align: center;
+  font-size: 24px;
+}
+
+
+
+/* Media query for Android devices */
+@media only screen and (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar li {
+    margin: 10px 0;
+  }
+
+  .navbar li a {
+    padding: 10px;
+  }
+
+  .dropdown-menu {
+    width: 100%;
+    left: 0;
+    transform: none;
+  }
+}
+
+/* =========================================FOOTER ====================================================*/
+
+.footer {
+  background: #0A1F32;
+  color: #fff;
+  padding: 60px 20px;
+}
+
+.footer .footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px; 
+}
+
+.footer .footer-col {
+  flex: 1;
+  max-width: 300px;
+}
+
+.footer .footer-col h4 {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.footer .links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer .links li {
+  margin-bottom: 10px;
+}
+
+.footer .links li a {
+  text-decoration: none;
+  color: #bfbfbf;
+  transition: color 0.3s ease;
+}
+
+.footer .links li a:hover {
+  color: #fff;
+}
+
+.footer p {
+  color: #bfbfbf;
+  max-width: 300px;
+  margin-bottom: 20px; /* Increase space below paragraph */
+}
+
+.footer form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.footer input {
+  height: 40px;
+  border-radius: 6px;
+  background: none;
+  width: 100%;
+  outline: none;
+  border: 1px solid #7489C6;
+  caret-color: #fff;
+  color: #fff;
+  padding: 0 10px; /* Adjust input padding */
+}
+
+.footer input::placeholder {
+  color: #ccc;
+}
+
+.footer button {
+  background: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.footer button:hover {
+  background: #cecccc;
+}
+
+.footer .icons {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.footer .icons i {
+  color: #afb6c7;
+  transition: color 0.3s ease;
+}
+
+.footer .icons i:hover {
+  color: #fff;
+}
+
+.btn{
+  display: inline-block;
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-2);
+  background: var(--color-white);
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn.primary{
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.center{
+  text-align: center;
+  padding-top: 5rem;
+  margin-inline: center;
+  display: block;
+  width: 100%;
+}
+
+.error-page h2{
+  margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 20px; /* Adjust padding for smaller screens */
+  }
+
+  .footer .footer-row {
+    gap: 20px; /* Reduce gap between footer columns */
+  }
+
+  .footer .footer-col {
+    max-width: 100%; /* Make footer columns full width on smaller screens */
+    margin-bottom: 30px; /* Add space below each footer column */
+  }
+
+  .footer form :where(input, button) {
+    width: 100%;
+  }
+
+  .footer button {
+    margin-top: 10px; /* Adjust button margin for smaller screens */
+  }
+}
