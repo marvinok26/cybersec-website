@@ -16,11 +16,6 @@ body{
   color: var(--color-gray-700);
 }
 
-
-
-
-
-
 /*==================================================NAVBAR==========================================*/
 .header {
   background-color: #0A1F32;
@@ -37,13 +32,13 @@ body{
 .logo {
   width: 100px;
   height: auto;
- margin-left: 10rem;
+  margin-left: 10rem;
   padding: 0;;
 }
 
 .navbar {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   margin-left: -9rem;
 }
 
@@ -94,7 +89,6 @@ body{
   left: 50%; /* Position the dropdown menu at the center horizontally */
 }
 
-
 /* Optional: Hover effect on links */
 .navbar li:hover a {
   background-color: #0A1F40;
@@ -118,11 +112,11 @@ body{
   margin-left: 10rem;
 }
 
-.sliding-text h1{
+.sliding-text h1 {
   font-size: 35px;
 }
 
-.sliding-text p{
+.sliding-text p {
   font-size: 12px;
   font-weight: lighter;
 }
@@ -131,8 +125,8 @@ body{
 .sliding-text p {
   width: 600px; /* Set width */
   height: 115px; /* Set height */
-  overflow: hidden; /* Hide any content exeding the specified dimensions */
-   margin: 0; /* Remove default margin */
+  overflow: hidden; /* Hide any content exceeding the specified dimensions */
+  margin: 0; /* Remove default margin */
   padding: 0; /* Remove default padding */
 }
 
@@ -161,6 +155,10 @@ body{
 }
 
 /* Optional: Adjust styling for button */
+.con3-btn {
+  margin-top: 2rem;
+}
+
 .btn-show__more {
   background-color: #007bff;
   color: #fff;
@@ -169,13 +167,11 @@ body{
   cursor: pointer;
 }
 
-.container2{
+.container2 {
   padding: 30px;
   text-align: center;
   font-size: 24px;
 }
-
-
 
 /* Media query for Android devices */
 @media only screen and (max-width: 768px) {
@@ -197,7 +193,248 @@ body{
     left: 0;
     transform: none;
   }
+
+  .home-contents {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .sliding-text {
+    margin: 20px 0;
+    width: 100%;
+  }
+
+  .sliding-text h1, .sliding-text p {
+    width: auto;
+    height: auto;
+  }
+
+  .header-image {
+    position: static;
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+  }
+
+  .about-image {
+    margin-left: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .con3-content {
+    margin: 0;
+    width: 100%;
+  }
+
+  .container3 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .con3-header, .con3-text {
+    width: 90%;
+    margin: 10px 0;
+  }
 }
+
+/*=============================================HOME CON3=============================================*/
+.home-container2 {
+  text-align: center;
+  padding: 25px;
+  margin: 8px 0;
+  background-color: #E9E9E9;
+}
+
+.container3 {
+  background-color: #E9E9E9;
+  display: flex;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.about-image {
+  margin-top: 1.5rem;
+  margin-right: 20px;
+  margin-left: 12rem;
+  width: 30%;
+  height: 450px;
+}
+
+.con3-content {
+  margin-right: 5rem;
+  margin-left: 20px;
+  width: 60%;
+}
+
+.con3-text {
+  background-color: #E9E9F3;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.con3-header {
+  background-color: #E9E9F6;
+  margin-bottom: 5px;
+  padding: 10px;
+}
+
+.con3-header h1 {
+  text-align: center;
+}
+
+.con3-header p {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.con3-header h1, .con3-header p {
+  margin: 0;
+}
+
+.con3-text h5 {
+  margin-top: 0;
+  font-size: 13px;
+}
+
+.con3-text p {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.icon-text {
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+.icon {
+  margin-right: 20px;
+  margin-left: 10px;
+  font-size: 35px;
+}
+
+.btn-primary {
+  display: block;
+  margin-top: 20px;
+}
+
+/*============================== NUMBERS SECTION =================================*/
+
+.numbers {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #0A1F32; 
+  margin-bottom: 1rem;
+   padding: 0 10.8rem;
+}
+
+.numbers .number-item {
+  text-align: center;
+  flex: 1;
+  margin: 3rem;;
+}
+
+.numbers h5 {
+  font-size: 30px;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.numbers p {
+  font-size: 16px;
+  color: #fff;
+  margin-top: 0;
+  white-space: pre-wrap;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+  .numbers {
+    flex-direction: column;
+  }
+
+  .numbers .number-item {
+    margin-bottom: 20px;
+  }
+}
+
+/*============================== SECURITY SOLUTIONS SECTION =================================*/
+
+.sec-solutions__section {
+  text-align: center;
+  padding: 2rem;
+  background-color: #E9E9F3;
+}
+
+.sec-heading h4,
+.sec-heading p {
+  margin-bottom: 0.5rem;
+}
+
+.sec-heading h4{
+  font-size: 28px;
+}
+
+.sec-heading p {
+  font-size: 14px;
+  margin: 0 6rem;
+  margin-bottom: 2rem;
+  
+}
+
+.sec-solutions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 6rem;
+  gap: 1rem;
+}
+
+.solution-item {
+  flex: 1 1 calc(33.333% - 2rem);
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  background-color: #E9E9F3;
+  margin: 0.5rem;
+  height: 250px;
+}
+
+.solution-icon {
+  font-size: 60px;
+  margin-bottom: 2.5rem;
+  background-color: white; 
+  border-radius: 50%;
+  padding: 12px;
+  display: inline-block;
+}
+
+.solution-item h5 {
+  font-size: 20px;
+  margin-bottom: 0.5rem;
+}
+
+.solution-item p {
+  font-size: 14px;
+  margin-top: 0;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+  .sec-solutions {
+    flex-direction: column;
+  }
+
+  .solution-item {
+    flex: 1 1 100%;
+  }
+}
+
 
 /* =========================================FOOTER ====================================================*/
 
@@ -302,7 +539,7 @@ body{
   color: #fff;
 }
 
-.btn{
+.btn {
   display: inline-block;
   width: fit-content;
   padding: 0.5rem 1rem;
@@ -313,12 +550,12 @@ body{
   transition: var(--transition);
 }
 
-.btn.primary{
+.btn.primary {
   background: var(--color-primary);
   color: var(--color-white);
 }
 
-.center{
+.center {
   text-align: center;
   padding-top: 5rem;
   margin-inline: center;
@@ -326,7 +563,7 @@ body{
   width: 100%;
 }
 
-.error-page h2{
+.error-page h2 {
   margin-top: 3rem;
 }
 
@@ -350,5 +587,119 @@ body{
 
   .footer button {
     margin-top: 10px; /* Adjust button margin for smaller screens */
+  }
+}
+
+/* ====================================== MEDIA QUERIES FOR ANDROID DEVICES ======================================= */
+
+@media only screen and (max-width: 480px) {
+  .navbar ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar li {
+    margin: 10px 0;
+  }
+
+  .navbar li a {
+    padding: 10px;
+  }
+
+  .dropdown-menu {
+    width: 100%;
+    left: 0;
+    transform: none;
+  }
+
+  .home-contents {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+  }
+
+  .sliding-text {
+    margin: 20px 0;
+    padding: 0 10px;
+    width: 100%;
+  }
+
+  .sliding-text h1 {
+    font-size: 24px;
+  }
+
+  .sliding-text p {
+    font-size: 14px;
+  }
+
+  .header-image {
+    position: static;
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+  }
+
+  .container2 {
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  .about-image {
+    margin-left: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .con3-content {
+    margin: 0;
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .container3 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .con3-header,
+  .con3-text {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .con3-header p,
+  .con3-text p,
+  .con3-text h5 {
+    font-size: 14px;
+  }
+
+  .icon-text {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .footer .footer-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer .footer-col {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .footer form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer form :where(input, button) {
+    width: 100%;
   }
 }
