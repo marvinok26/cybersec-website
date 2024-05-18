@@ -4,6 +4,7 @@ import headerImage1 from '../images/img10.jpeg';
 import headerImage2 from '../images/img9.jpeg';
 import headerImage3 from '../images/img3.jpg';
 import aboutImage from '../images/img11.jpg';
+import chooseImage from '../images/img5.jpg';
 import { PiCertificateFill } from "react-icons/pi";
 import { BiSolidCertification } from "react-icons/bi";
 import { GiTechnoHeart } from "react-icons/gi";
@@ -11,7 +12,8 @@ import { TbSettingsAutomation } from "react-icons/tb";
 import { MdOutlineLockPerson } from "react-icons/md";
 import { BsPersonLock } from "react-icons/bs";
 import { GrShieldSecurity } from "react-icons/gr";
-import {FaNetworkWired, FaLaptopCode } from 'react-icons/fa';
+import { FaNetworkWired, FaLaptopCode } from 'react-icons/fa';
+import { SiTicktick } from "react-icons/si";
 
 const Home = () => {
   const [currentImage, setCurrentImage] = useState(0);
@@ -47,7 +49,7 @@ const Home = () => {
 
       <div className="container3">
         {/* About section */}
-        <img src={aboutImage} alt='About us' className="about-image"/>
+        <img src={aboutImage} alt='About us' className="about-image" />
 
         <div className="con3-content">
           <div className="con3-header">
@@ -84,12 +86,13 @@ const Home = () => {
               </div>
             </div>
           </div>
-          
+
           <div className="con3-btn">
             <button className="btn-show__more">Show More</button>
           </div>
         </div>
       </div>
+
       <div className="numbers">
         {/* number */}
         <div className="number-item">
@@ -112,6 +115,7 @@ const Home = () => {
           <p>RATES ON AVERAGE CUSTOMER</p>
         </div>
       </div>
+
       <div className="sec-solutions__section">
         {/* security solutions section */}
         <div className="sec-heading">
@@ -126,7 +130,7 @@ const Home = () => {
             <p>Protect your network infrastructure from unauthorized access.</p>
           </div>
           <div className="solution-item">
-            <MdOutlineLockPerson  className="solution-icon" />
+            <MdOutlineLockPerson className="solution-icon" />
             <h5>Data Encryption</h5>
             <p>Secure sensitive data with advanced encryption techniques.</p>
           </div>
@@ -150,6 +154,32 @@ const Home = () => {
             <h5>Application Security</h5>
             <p>Ensure your applications are secure from vulnerabilities.</p>
           </div>
+        </div>
+      </div>
+
+      <div className="choose-section">
+        {/* Choose Us */}
+        <div className="choose-left__contents">
+          <div className="choose-sec__header">
+            <h4>WHY CHOOSE US?</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis delectus, porro itaque nostrum tenetur voluptates, autem aperiam voluptatem consectetur, expedita atque reprehenderit fugit officiis voluptate illo id nesciunt excepturi. Ex repudiandae, eius vel beatae mollitia ea dolorem perferendis ratione neque!</p>
+          </div>
+          <div className="choose-sec__content">
+            <div className="reasons">
+              <div className="reason-item"><SiTicktick /> Industry-leading expertise</div>
+              <div className="reason-item"><SiTicktick /> Cutting-edge technology integration</div>
+              <div className="reason-item"><SiTicktick /> Proven track record of success</div>
+              <div className="reason-item"><SiTicktick /> Customized solutions tailored to your needs</div>
+              <div className="reason-item"><SiTicktick /> 24/7 customer support</div>
+              <div className="reason-item"><SiTicktick /> Affordable pricing options</div>
+            </div>
+            <div className="choose-btn">
+              <button className="btn-show__more">Learn More</button>
+            </div>
+          </div>
+        </div>
+        <div className="choose-img">
+          <img src={chooseImage} alt="choose img" />
         </div>
       </div>
     </div>
