@@ -5,6 +5,14 @@ import headerImage2 from '../images/img9.jpeg';
 import headerImage3 from '../images/img3.jpg';
 import aboutImage from '../images/img11.jpg';
 import chooseImage from '../images/img5.jpg';
+import cus1 from  '../images/customer1.jpg'
+import cus2 from  '../images/customer2.jpg'
+import cus3 from  '../images/customer3.jpg'
+import cus4 from  '../images/customer4.jpg'
+import cus5 from  '../images/customer5.jpg'
+import cus6 from  '../images/customer6.jpg'
+
+
 import { PiCertificateFill } from "react-icons/pi";
 import { BiSolidCertification } from "react-icons/bi";
 import { GiTechnoHeart } from "react-icons/gi";
@@ -14,6 +22,8 @@ import { BsPersonLock } from "react-icons/bs";
 import { GrShieldSecurity } from "react-icons/gr";
 import { FaNetworkWired, FaLaptopCode } from 'react-icons/fa';
 import { SiTicktick } from "react-icons/si";
+
+
 
 const Home = () => {
   const [currentImage, setCurrentImage] = useState(0);
@@ -72,7 +82,7 @@ const Home = () => {
               <BiSolidCertification className="icon" />
               <div>
                 <h5>High Professional Members</h5>
-                <p>Cybersecurity professionals are trained to find weaknesses in databases, networks, and business...</p>
+                <p>Our cybersecurity professionals are trained to find weaknesses in databases, networks, and businesses.</p>
               </div>
             </div>
           </div>
@@ -82,7 +92,7 @@ const Home = () => {
               <GiTechnoHeart className="icon" />
               <div>
                 <h5>Infrastructure Integration Technology</h5>
-                <p>The integration infrastructure consists of a set of middleware technologies that provide the...</p>
+                <p>Our integration infrastructure consists of a set of middleware technologies that provide advanced protection.</p>
               </div>
             </div>
           </div>
@@ -162,16 +172,16 @@ const Home = () => {
         <div className="choose-left__contents">
           <div className="choose-sec__header">
             <h4>WHY CHOOSE US?</h4>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis delectus, porro itaque nostrum tenetur voluptates, autem aperiam voluptatem consectetur, expedita atque reprehenderit fugit officiis voluptate illo id nesciunt excepturi. Ex repudiandae, eius vel beatae mollitia ea dolorem perferendis ratione neque!</p>
+            <p>According to a study by McAfee and the CSS, based on data collected by Vanson Bourne, the world economy loses more than $1 trillion each year due to cybercrime. Political, ethical and social incentives can also drive attackers</p>
           </div>
           <div className="choose-sec__content">
             <div className="reasons">
-              <div className="reason-item"><SiTicktick /> Industry-leading expertise</div>
-              <div className="reason-item"><SiTicktick /> Cutting-edge technology integration</div>
-              <div className="reason-item"><SiTicktick /> Proven track record of success</div>
-              <div className="reason-item"><SiTicktick /> Customized solutions tailored to your needs</div>
-              <div className="reason-item"><SiTicktick /> 24/7 customer support</div>
-              <div className="reason-item"><SiTicktick /> Affordable pricing options</div>
+              <div className="reason-item"><SiTicktick /> Malware Detection Removal</div>
+              <div className="reason-item"><SiTicktick /> Content Delivery Network</div>
+              <div className="reason-item"><SiTicktick /> Managed Web Application</div>
+              <div className="reason-item"><SiTicktick />Protection for Data and Network</div>
+              <div className="reason-item"><SiTicktick />24/7 Cyber Security Support</div>
+              <div className="reason-item"><SiTicktick /> Refresh Network Security Controls</div>
             </div>
             <div className="choose-btn">
               <button className="btn-show__more">Learn More</button>
@@ -181,6 +191,49 @@ const Home = () => {
         <div className="choose-img">
           <img src={chooseImage} alt="choose img" />
         </div>
+      </div>
+
+      {/* customer feedback */}
+      <div className="customer-feedback">
+        <div className="section__container">
+          <div className="feed-header">
+            <h1>CUSTOMER FEEDBACK</h1>
+            <p>TESTIMONIALS</p>
+        
+          </div>
+          <div className="testimonials__grid">
+            <div className="card">
+              <span><i className="ri-double-quotes-l"></i></span>
+              <p>
+                  I've been working with these guys for a long time and I can say that
+                my company is in the perfect hands.
+              </p>
+          <hr />
+          <img src={cus1} alt="user" />
+          <p className="name">Allan Collins</p>
+        </div>
+        <div className="card">
+          <span><i className="ri-double-quotes-l"></i></span>
+          <p>
+            Working with Alamat is just great, every network problem in my company is
+            solved in a matter of days.
+          </p>
+          <hr />
+          <img src={cus2} alt="user" />
+          <p className="name">Clay Washington</p>
+        </div>
+        <div className="card">
+          <span><i className="ri-double-quotes-l"></i></span>
+          <p>
+            Once I was hacked and minutes later my data was already
+            recovered, thanks to Alamat.
+          </p>
+          <hr />
+          <img src={cus3} alt="user" />
+          <p className="name">Tanya Grant</p>
+        </div>
+      </div>
+    </div>
       </div>
     </div>
   );

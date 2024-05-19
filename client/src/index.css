@@ -269,14 +269,14 @@ body{
 }
 
 .con3-text {
-  background-color: #E9E9F3;
+  background-color: #cacacf;
   border: 1px solid #ccc;
   padding: 10px;
   margin-bottom: 10px;
 }
 
 .con3-header {
-  background-color: #E9E9F6;
+  background-color: #cacacf;
   margin-bottom: 5px;
   padding: 10px;
 }
@@ -533,6 +533,116 @@ body{
     justify-content: center;
   }
 }
+
+
+/* =========================================CUSTOMER FEEDBACK ====================================================*/
+
+.customer-feedback {
+  /* font-family: 'Noto Serif', serif; */
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  background-color: #E9E9F9;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  
+}
+
+.section__container {
+  margin: 0 8.5rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.feed-header {
+  margin-bottom: 2rem;
+  color: #000;
+}
+
+.feed-header p {
+  letter-spacing: 2px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.feed-header h1 {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.testimonials__grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  padding: 2rem;
+  display: grid;
+  gap: 1rem;
+  color: #000;
+  background-color: #cacacf;
+  border-radius: 5px;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.card i {
+  font-size: 2.5rem;
+  color: gold;
+}
+
+.card p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.card hr {
+  width: 40px;
+  margin: auto;
+  color: var(--text-light);
+}
+
+.card img {
+  width: 60px;
+  height: 60px;
+  margin: auto;
+  border-radius: 100%;
+  border: 1px solid var(--primary-color);
+}
+
+.card .name {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--text-light);
+  transition: 0.3s;
+}
+
+.card .name:hover {
+  color: var(--primary-color);
+}
+
+
+@media (width < 900px) {
+  .testimonials__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media (width < 600px) {
+  .testimonials__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+
+
+
+
+
 
 
 
@@ -801,5 +911,580 @@ body{
 
   .footer form :where(input, button) {
     width: 100%;
+  }
+}
+
+
+/* ====================================================ABOUT US ======================================*/
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.about-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.about-text {
+  max-width: 800px;
+}
+
+.about-text h1 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 1.2em;
+  color: #555;
+  line-height: 1.6;
+}
+
+.about-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.about-item {
+  display: flex;
+  align-items: center;
+  margin: 10px 20px;
+  max-width: 300px;
+}
+
+.about-icon {
+  font-size: 2em;
+  color: #0066cc;
+  margin-right: 10px;
+}
+
+.about-item h5 {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.about-item p {
+  font-size: 1em;
+  color: #777;
+}
+
+.about-mission {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.about-mission h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.about-mission p {
+  font-size: 1.2em;
+  color: #555;
+  max-width: 800px;
+  line-height: 1.6;
+}
+
+.about-team {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.about-team h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.team-members {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  text-align: center;
+  margin: 10px;
+}
+
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.team-member h5 {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.team-member p {
+  font-size: 1em;
+  color: #777;
+}
+
+.about-testimonials {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.about-testimonials h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.testimonials {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.testimonial {
+  text-align: center;
+  margin: 10px;
+  max-width: 300px;
+}
+
+.testimonial p {
+  font-size: 1em;
+  color: #555;
+  line-height: 1.6;
+}
+
+.testimonial img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+.customer-name {
+  font-size: 1.1em;
+  color: #333;
+  margin-top: 10px;
+}
+
+.about-btn {
+  margin-top: 20px;
+}
+
+.btn-show-more {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #0066cc;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-show-more:hover {
+  background-color: #004a99;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .about-details, .team-members, .testimonials {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-item, .team-member, .testimonial {
+    max-width: 100%;
+  }
+
+  .about-image {
+    max-width: 100%;
+  }
+
+  .about-mission p, .about-text p {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-text h1 {
+    font-size: 2em;
+  }
+
+  .about-text p, .about-mission p, .testimonial p {
+    font-size: 1em;
+  }
+
+  .about-icon {
+    font-size: 1.5em;
+  }
+
+  .about-item h5, .team-member h5, .customer-name {
+    font-size: 1em;
+  }
+
+  .btn-show-more {
+    font-size: 0.9em;
+    padding: 8px 16px;
+  }
+}
+
+
+/* ==============================================SERVICES =============================================================*/
+.services-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  background-color: #f5f5f5;
+}
+
+.services-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.services-header h1 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.services-header p {
+  font-size: 1.2em;
+  color: #555;
+  max-width: 800px;
+  line-height: 1.6;
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service-item {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  max-width: 300px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+  font-size: 3em;
+  color: #0066cc;
+  margin-bottom: 20px;
+}
+
+.service-item h3 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.service-item p {
+  font-size: 1em;
+  color: #777;
+  line-height: 1.6;
+}
+
+.benefits-section {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.benefits-section h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.benefit-item {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  max-width: 300px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-icon {
+  font-size: 3em;
+  color: #0066cc;
+  margin-bottom: 20px;
+}
+
+.benefit-item h3 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.benefit-item p {
+  font-size: 1em;
+  color: #777;
+  line-height: 1.6;
+}
+
+
+@media (max-width: 768px) {
+  .services-list, .benefits-list, .team-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-item, .benefit-item, .team-item {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-header h1 {
+    font-size: 2em;
+  }
+
+  .services-header p {
+    font-size: 1em;
+  }
+
+  .service-icon, .benefit-icon {
+    font-size: 2.5em;
+  }
+
+  .service-item h3, .benefit-item h3, .team-item h3 {
+    font-size: 1.2em;
+  }
+
+  .service-item p, .benefit-item p, .team-item p {
+    font-size: 0.9em;
+  }
+}
+
+/* ================================================CAREERS========================================== */
+.careers-container {
+  padding: 40px;
+}
+
+.careers-container h1 {
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.careers-container p {
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.job-listings {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.job-item {
+  background-color: #cacacf;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.job-item h2 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.job-item p {
+  font-size: 1em;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.job-item button {
+  background-color: #0066cc;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.job-item button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .careers-container {
+    padding: 20px;
+  }
+
+  .careers-container h1 {
+    font-size: 2em;
+  }
+
+  .careers-container p {
+    font-size: 1em;
+  }
+
+  .job-listings {
+    gap: 10px;
+  }
+
+  .job-item {
+    padding: 15px;
+  }
+
+  .job-item h2 {
+    font-size: 1.3em;
+  }
+
+  .job-item p {
+    font-size: 0.9em;
+  }
+
+  .job-item button {
+    padding: 8px 16px;
+    font-size: 0.9em;
+  }
+}
+
+/* ===============================================CONTACT US========================================= */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.contact-info {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contact-info h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.contact-item .contact-icon {
+  margin-right: 10px;
+}
+
+.contact-form {
+  text-align: center;
+}
+
+.contact-form h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form textarea {
+  height: 150px;
+}
+
+.contact-form button {
+  background-color: #0066cc;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 20px;
+  }
+
+  .contact-info h1 {
+    font-size: 2em;
+  }
+
+  .contact-info .contact-details {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .contact-item p {
+    font-size: 1em;
+  }
+
+  .contact-form h2 {
+    font-size: 1.8em;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 80%;
   }
 }
