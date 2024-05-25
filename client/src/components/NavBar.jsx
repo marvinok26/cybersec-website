@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink, Link } from 'react-router-dom';
-
+import logo1 from '../images/logo1.jpeg';
 
 const NavBar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -13,7 +13,7 @@ const NavBar = () => {
     <header className="header">
       <div className="logo-and-nav">
         {/* Logo */}
-        <img src="/path/to/logo.png" alt="Cybersecurity Logo" className="logo" />
+        <img src={logo1} alt="Cybersecurity Logo" className="logo" />
         
         {/* Navbar */}
         <nav className="navbar">
@@ -28,9 +28,9 @@ const NavBar = () => {
               <Link to="/services">SERVICES</Link>
               {dropdownOpen && (
                 <ul className="dropdown-menu">
-                  <li><a href="/services/consulting">Consulting</a></li>
-                  <li><a href="/services/audit">Audit</a></li>
-                  <li><a href="/services/training">Training</a></li>
+                  <li><Link to="/services/consulting">Consulting</Link></li>
+                  <li><Link to="/services/audit">Audit</Link></li>
+                  <li><Link to="/services/training">Training</Link></li>
                 </ul>
               )}
             </li>
@@ -39,9 +39,8 @@ const NavBar = () => {
           </ul>
         </nav>
       </div>
-      
-      </header>
+    </header>
   );
-}
+};
 
-export default NavBar
+export default NavBar;

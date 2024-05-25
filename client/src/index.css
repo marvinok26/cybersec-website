@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap');
 
-*{
+* {
   margin: 0;
   padding: 0;
   border: 0;
@@ -8,7 +8,7 @@
   box-sizing: border-box;
 }
 
-body{
+body {
   font-family: "Poppins", sans-serif;
   background: var(--color-bg);
   font-size: 0.9rem;
@@ -20,31 +20,29 @@ body{
 .header {
   background-color: #0A1F32;
   color: #fff;
-  padding: 5px 0;
+  padding: 10px 0;
 }
 
 .logo-and-nav {
-  display: block;
-  justify-content: space-between;
+  display: flex;
   align-items: center;
 }
 
 .logo {
-  width: 100px;
-  height: auto;
-  margin-left: 10rem;
-  padding: 0;;
+  width: 80px; /* Adjust the width as needed */
+  height: 50px;
+  margin-left: 11rem; /* Adjust the margin as needed */
 }
 
 .navbar {
   display: flex;
   justify-content: center;
-  margin-left: -9rem;
+  flex-grow: 1;
 }
 
 .navbar ul {
   list-style-type: none;
-  margin: 0;
+  margin-right: 23rem;
   padding: 0;
   display: flex;
 }
@@ -67,9 +65,10 @@ body{
   background-color: #0A1F32;
   border-radius: 4px;
   padding: 10px 0;
-  left: 0; /* Ensure dropdown menu starts from the left edge of the dropdown item */
-  top: calc(100% + 5px); /* Position the dropdown menu just below the dropdown item */
-  min-width: 160px; /* Set a minimum width for the dropdown menu */
+  left: 50%; /* Center the dropdown */
+  top: calc(100% + 5px);
+  transform: translateX(-50%); /* Center the dropdown */
+  min-width: 160px;
 }
 
 .dropdown-menu a {
@@ -83,14 +82,8 @@ body{
   display: block;
 }
 
-/* Centering dropdown menu */
-.dropdown-menu {
-  transform: translateX(-50%);
-  left: 50%; /* Position the dropdown menu at the center horizontally */
-}
-
 /* Optional: Hover effect on links */
-.navbar li:hover a {
+.navbar li:hover > a {
   background-color: #0A1F40;
   border-radius: 10px;
 }
@@ -160,11 +153,21 @@ body{
 }
 
 .btn-show__more {
+  text-decoration: none;
   background-color: #007bff;
   color: #fff;
   border: none;
   padding: 10px 20px;
   cursor: pointer;
+}
+
+.btn-show__more a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-show__more:hover {
+  background-color: #007bbc;
 }
 
 .container2 {
@@ -254,17 +257,21 @@ body{
   padding: 20px;
 }
 
-.about-image {
-  margin-top: 1.5rem;
+.con3-img{
   margin-right: 20px;
-  margin-left: 12rem;
-  width: 30%;
-  height: 450px;
+  margin-left: 10rem;
+
+}
+
+.con3-img img{
+  
+  width: 500px;
+  height: 490px;
 }
 
 .con3-content {
-  margin-right: 5rem;
-  margin-left: 20px;
+  margin-right: 7rem;
+  margin-left: 5px;
   width: 60%;
 }
 

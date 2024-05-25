@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { NavLink, Link } from 'react-router-dom';
 
 import headerImage1 from '../images/img10.jpeg';
 import headerImage2 from '../images/img9.jpeg';
@@ -44,7 +45,7 @@ const Home = () => {
         <div className="sliding-text">
           <h1>POWERFUL SECURITY SYSTEMS TO PROTECT YOUR BUSINESS.</h1>
           <p>Cyber security is the practice of defending computers, servers, mobile devices electronic systems, networks, and data from malicious attacks, its also known as information technology security or electronic information security.</p>
-          <button className="btn-show__more">Show More</button>
+          <button className="btn-show__more"><Link to="services">Show More</Link> </button>
         </div>
 
         {/* Image Slider */}
@@ -59,7 +60,9 @@ const Home = () => {
 
       <div className="container3">
         {/* About section */}
+        <div className='con3-img'>
         <img src={aboutImage} alt='About us' className="about-image" />
+        </div>
 
         <div className="con3-content">
           <div className="con3-header">
@@ -98,7 +101,7 @@ const Home = () => {
           </div>
 
           <div className="con3-btn">
-            <button className="btn-show__more">Show More</button>
+            <button className="btn-show__more"><Link to="about" >Show More</Link></button>
           </div>
         </div>
       </div>
@@ -184,7 +187,7 @@ const Home = () => {
               <div className="reason-item"><SiTicktick /> Refresh Network Security Controls</div>
             </div>
             <div className="choose-btn">
-              <button className="btn-show__more">Learn More</button>
+              <button className="btn-show__more"><Link to="services"> Learn More </Link></button>
             </div>
           </div>
         </div>
@@ -194,7 +197,7 @@ const Home = () => {
       </div>
 
       {/* customer feedback */}
-      <div className="customer-feedback">
+      {/* <div className="customer-feedback">
         <div className="section__container">
           <div className="feed-header">
             <h1>CUSTOMER FEEDBACK</h1>
@@ -234,7 +237,7 @@ const Home = () => {
         </div>
       </div>
     </div>
-      </div>
+      </div> */}
     </div>
   );
 }
