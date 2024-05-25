@@ -1,6 +1,6 @@
 import React from 'react';
 
-import logo2 from '../images/logo2.jpeg'
+import logo2 from '../images/logo2.jpeg';
 import teamImage1 from '../images/customer5.jpg';
 import teamImage2 from '../images/customer6.jpg';
 import teamImage3 from '../images/customer7.jpg';
@@ -15,7 +15,7 @@ const About = () => {
   return (
     <div className="about-container">
       <div className="about-header">
-        <img src={logo2} alt="About us" className="about-image" />
+        <img src={logo2} alt="About us" className="about-image spin-logo" />
         <div className="about-text">
           <h1>ABOUT OUR COMPANY</h1>
           <p>

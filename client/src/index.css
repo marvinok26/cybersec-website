@@ -16,11 +16,11 @@ body {
   color: var(--color-gray-700);
 }
 
+
 /*==================================================NAVBAR==========================================*/
 .header {
   background-color: #0A1F32;
   color: #fff;
-  padding: 10px 0;
 }
 
 .logo-and-nav {
@@ -28,10 +28,13 @@ body {
   align-items: center;
 }
 
+
+
 .logo {
   width: 80px; /* Adjust the width as needed */
-  height: 50px;
+  height: 45px;
   margin-left: 11rem; /* Adjust the margin as needed */
+  margin-top: 0.3rem;
 }
 
 .navbar {
@@ -125,11 +128,11 @@ body {
 
 .header-image {
   position: absolute;
-  top: 0.7rem;
-  right: 0.8rem; /* Position the image to the right */
+  top: 0;
+  right: 0; /* Position the image to the right */
   bottom: 0; /* Stretch the image to cover the entire height of home-contents */
   width: 400px; /* Fixed width */
-  height: 450px; /* Occupy full height of home-contents */
+  height: 446px; /* Occupy full height of home-contents */
 }
 
 .header-image img {
@@ -947,6 +950,24 @@ body {
   margin-bottom: 20px;
 }
 
+.spin-logo {
+  animation: pulse 5s linear infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/* Apply the pulsing animation to the .pulse-logo class */
+.pulse-logo {
+  animation: pulse 2s ease-in-out infinite;
+}
+
 .about-text {
   max-width: 800px;
 }
@@ -1155,8 +1176,6 @@ body {
     padding: 8px 16px;
   }
 }
-
-
 /* ==============================================SERVICES =============================================================*/
 .services-container {
   display: flex;

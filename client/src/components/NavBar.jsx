@@ -13,7 +13,9 @@ const NavBar = () => {
     <header className="header">
       <div className="logo-and-nav">
         {/* Logo */}
+        <Link to="/">
         <img src={logo1} alt="Cybersecurity Logo" className="logo" />
+        </Link>
         
         {/* Navbar */}
         <nav className="navbar">
