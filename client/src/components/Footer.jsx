@@ -8,32 +8,32 @@ const Footer = () => {
         <div className="footer-col">
           <h4>SERVICES</h4>
           <ul className="links">
-            <li><a href="#">Network Security</a></li>
-            <li><a href="#">Data Encryption</a></li>
-            <li><a href="#">Cloud Security</a></li>
-            <li><a href="#">End-Point Security</a></li>
-            <li><a href="#">Security Automation</a></li>
+            <li><a href="services">Network Security</a></li>
+            <li><a href="services">Data Encryption</a></li>
+            <li><a href="services">Cloud Security</a></li>
+            <li><a href="services">End-Point Security</a></li>
+            <li><a href="services">Security Automation</a></li>
           </ul>
         </div>
 
         <div className="footer-col">
           <h4>RESOURCES</h4>
           <ul className="links">
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Blogs</a></li>
-            <li><a href="#">Themes</a></li>
-            <li><a href="#">Support</a></li>
-            <li><a href="#">Legals</a></li>
+            <li><a href="careers">Careers</a></li>
+            <li><a href="about">Blogs</a></li>
+            <li><a href="/">Themes</a></li>
+            <li><a href="contact">Support</a></li>
+            <li><a href="contact">Legals</a></li>
           </ul>
         </div>
 
         <div className="footer-col">
           <h4>COMMUNITY</h4>
           <ul className="links">
-            <li><a href="#">Our Team</a></li>
-            <li><a href="#">Why Alamat</a></li>
-            <li><a href="#">ICareers</a></li>
-            <li><a href="#">News</a></li>
+            <li><a href="about">Our Team</a></li>
+            <li><a href="services">Why Alamat</a></li>
+            <li><a href="careers">ICareers</a></li>
+            <li><a href="about">News</a></li>
           </ul>
         </div>
 

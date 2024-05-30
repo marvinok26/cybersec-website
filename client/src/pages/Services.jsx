@@ -53,24 +53,6 @@ const benefitsData = [
   }
 ];
 
-const teamData = [
-  {
-    name: 'John Doe',
-    position: 'Chief Security Officer',
-    description: 'John leads our cybersecurity team with over 15 years of experience in the industry.'
-  },
-  {
-    name: 'Jane Smith',
-    position: 'Lead Security Analyst',
-    description: 'Jane specializes in threat analysis and incident response, ensuring our clients are always protected.'
-  },
-  {
-    name: 'Mike Johnson',
-    position: 'Security Software Developer',
-    description: 'Mike develops custom security software to address unique challenges faced by our clients.'
-  }
-];
-
 const Services = () => {
   return (
     <div className="services-container">

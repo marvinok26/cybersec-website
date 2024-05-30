@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { NavLink, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import headerImage1 from '../images/img10.jpeg';
 import headerImage2 from '../images/img9.jpeg';
@@ -29,7 +29,7 @@ const Home = () => {
     }, 4000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [images.length]);
 
   return (
     <div className="home-container1">
@@ -43,7 +43,7 @@ const Home = () => {
 
         {/* Image Slider */}
         <div className="header-image">
-          <img src={images[currentImage]} alt={`Header Image ${currentImage + 1}`} />
+          <img src={images[currentImage]} alt={`header ${currentImage + 1}`} />
         </div>
       </div>
 
@@ -54,7 +54,7 @@ const Home = () => {
       <div className="container3">
         {/* About section */}
         <div className='con3-img'>
-        <img src={aboutImage} alt='About us' className="about-image" />
+        <img src={aboutImage} alt="About us" className="about-image" />
         </div>
 
         <div className="con3-content">
