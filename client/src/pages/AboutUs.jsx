@@ -4,9 +4,7 @@ import logo from '../images/logo1.jpeg';
 import teamImage1 from '../images/customer5.jpg';
 import teamImage2 from '../images/customer6.jpg';
 import teamImage3 from '../images/customer7.jpg';
-import cus1 from '../images/customer1.jpg';
-import cus2 from '../images/customer2.jpg';
-import cus3 from '../images/customer3.jpg';
+
 import { PiCertificateFill } from "react-icons/pi";
 import { BiSolidCertification } from "react-icons/bi";
 import { GiTechnoHeart } from "react-icons/gi";

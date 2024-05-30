@@ -6,13 +6,6 @@ import headerImage2 from '../images/img9.jpeg';
 import headerImage3 from '../images/img3.jpg';
 import aboutImage from '../images/img11.jpg';
 import chooseImage from '../images/img5.jpg';
-import cus1 from  '../images/customer1.jpg'
-import cus2 from  '../images/customer2.jpg'
-import cus3 from  '../images/customer3.jpg'
-import cus4 from  '../images/customer4.jpg'
-import cus5 from  '../images/customer5.jpg'
-import cus6 from  '../images/customer6.jpg'
-
 
 import { PiCertificateFill } from "react-icons/pi";
 import { BiSolidCertification } from "react-icons/bi";
