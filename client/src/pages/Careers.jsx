@@ -24,8 +24,9 @@ const Careers = () => {
     <div className="careers-container">
       <h1>Join Our Team</h1>
       <p>Explore our current job openings and apply to become part of our dynamic team.</p>
+      <p>Currently no positions available</p>
       
-      <div className="job-listings">
+      {/* <div className="job-listings">
         {jobListings.map((job, index) => (
           <div className="job-item" key={index}>
             <h2>{job.title}</h2>
@@ -33,7 +34,7 @@ const Careers = () => {
             <button>Apply Now</button>
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };

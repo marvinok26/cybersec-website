@@ -48,7 +48,7 @@ const Home = () => {
       </div>
 
       <div className="home-container2">
-        <h1>TRUSTED BY MILLIONS OF CUSTOMERS</h1>
+        <h1>YOUR PREMIER TECHNOLOGY PARTNER</h1>
       </div>
 
       <div className="container3">
@@ -99,9 +99,9 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="numbers">
+      {/* <div className="numbers"> */}
         {/* number */}
-        <div className="number-item">
+        {/* <div className="number-item">
           <h5>6</h5>
           <p>YEARS WORKING EXPERIENCE</p>
         </div>
@@ -120,7 +120,7 @@ const Home = () => {
           <h5>4.7</h5>
           <p>RATES ON AVERAGE CUSTOMER</p>
         </div>
-      </div>
+      </div> */}
 
       <div className="sec-solutions__section">
         {/* security solutions section */}

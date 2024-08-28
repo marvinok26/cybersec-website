@@ -53,7 +53,7 @@ const About = () => {
         </p>
       </div>
 
-      <div className="about-team">
+      {/* <div className="about-team">
         <h2>Meet Our Team</h2>
         <div className="team-members">
           <div className="team-member">
@@ -72,7 +72,7 @@ const About = () => {
             <p>Lead Security Analyst</p>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* <div className="about-testimonials">
         <h2>Customer Testimonials</h2>
