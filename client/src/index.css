@@ -979,6 +979,7 @@ body {
   }
 
   .icon-text {
+    margin-top: -5px;
     display: flex;
     align-items: center;
     width: 100%;
