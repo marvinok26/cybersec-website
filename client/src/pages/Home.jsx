@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import headerImage1 from '../images/img10.jpeg';
 import headerImage2 from '../images/img9.jpeg';
 import headerImage3 from '../images/img3.jpg';
-import aboutImage from '../images/img11.jpg';
+import aboutImage from '../images/cyber1.jpg';
 import chooseImage from '../images/img5.jpg';
 
 import { PiCertificateFill } from "react-icons/pi";
