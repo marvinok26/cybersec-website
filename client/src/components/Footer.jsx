@@ -52,16 +52,16 @@ const Footer = () => {
             <button type="submit">SUBSCRIBE</button>
           </form>
           <div className="social-icons">
-      <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="icon">
+      <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="icon2">
         <FaFacebookF />
       </a>
-      <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" className="icon">
+      <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" className="icon2">
         <FaTwitter />
       </a>
-      <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="icon">
+      <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="icon2">
         <FaLinkedinIn />
       </a>
-      <a href="https://www.github.com" target="_blank" rel="noopener noreferrer" className="icon">
+      <a href="https://www.github.com" target="_blank" rel="noopener noreferrer" className="icon2">
         <FaGithub />
       </a>
     </div>
