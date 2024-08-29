@@ -956,6 +956,7 @@ body {
     margin: 0;
     width: 100%;
     padding: 0 10px;
+    box-sizing: border-box;
   }
 
   .container3 {
@@ -978,10 +979,12 @@ body {
   .icon-text {
     flex-direction: column;
     align-items: flex-start;
+    width: 100%; 
+    box-sizing: border-box;
   }
 
   .icon {
-    font-size: 30px;
+    font-size: 24px;
     margin-bottom: 10px;
   }
 
