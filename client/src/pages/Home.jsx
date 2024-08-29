@@ -170,18 +170,18 @@ const Home = () => {
         <div className="choose-left__contents">
           <div className="choose-sec__header">
             <h4>WHY CHOOSE US?</h4>
-            <p>We are dedicated to delivering top-notch services that exceed our clients' expectations and
-drive their success. Our team of experienced professionals works tirelessly to provide
-innovative, reliable, and secure solutions tailored to meet the unique needs of each client.</p>
+            <p>As an industry-leading cyber security and cloud integrator, our core focus is the mitigation of information security risk for our clients.
+
+Small enough to remain agile, large enough to apply a dedicated approach to each client experience</p>
           </div>
           <div className="choose-sec__content">
             <div className="reasons">
-              <div className="reason-item"><SiTicktick /> Malware Detection Removal</div>
-              <div className="reason-item"><SiTicktick /> Content Delivery Network</div>
-              <div className="reason-item"><SiTicktick /> Managed Web Application</div>
-              <div className="reason-item"><SiTicktick />Protection for Data and Network</div>
-              <div className="reason-item"><SiTicktick />24/7 Cyber Security Support</div>
-              <div className="reason-item"><SiTicktick /> Refresh Network Security Controls</div>
+              <div className="reason-item"><SiTicktick /> Team players</div>
+              <div className="reason-item"><SiTicktick /> Experienced staff</div>
+              <div className="reason-item"><SiTicktick /> Flexible</div>
+              <div className="reason-item"><SiTicktick />Fast decision-making</div>
+              <div className="reason-item"><SiTicktick />Focussed</div>
+              <div className="reason-item"><SiTicktick /> On-the-ground staff</div>
             </div>
             <div className="choose-btn">
               <button className="btn-show__more"><Link to="services"> Learn More </Link></button>
