@@ -24,7 +24,7 @@ const Careers = () => {
     <div className="careers-container">
       <h1>Join Our Team</h1>
       <p>Explore our current job openings and apply to become part of our dynamic team.</p>
-      <p>Currently no positions available</p>
+      <p>Currently there are no positions available</p>
       
       {/* <div className="job-listings">
         {jobListings.map((job, index) => (

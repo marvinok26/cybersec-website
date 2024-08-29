@@ -36,8 +36,8 @@ const Home = () => {
       <div className="home-contents">
         {/* Sliding text */}
         <div className="sliding-text">
-          <h1>POWERFUL SECURITY SYSTEMS TO PROTECT YOUR BUSINESS.</h1>
-          <p>Cyber security is the practice of defending computers, servers, mobile devices electronic systems, networks, and data from malicious attacks, its also known as information technology security or electronic information security.</p>
+          <h1>DIGITAL TRANSFORMATION AND SECURE SOLUTIONS.</h1>
+          <p>We are a leading technology partner specializing in advanced cloud solutions and cybersecurity. Our mission is to empower businesses with secure, scalable infrastructure for innovation and efficiency. By offering tailored solutions and robust security, we protect clients from threats and support their digital transformation journey.</p>
           <button className="btn-show__more"><Link to="services">Show More</Link> </button>
         </div>
 
@@ -60,15 +60,16 @@ const Home = () => {
         <div className="con3-content">
           <div className="con3-header">
             <h1>ABOUT OUR COMPANY</h1>
-            <p>Cybersecurity companies are paid to manage the maintenance and support of all the systems within an enterprise network. All the functions, right from systems monitoring and security patching to recovering lost data and repairing corrupt systems, are handled by the cybersecurity company.</p>
+            <p>We provide cutting-edge cloud solutions and cybersecurity services, offering secure, scalable infrastructure tailored to your needs. Our expert team ensures seamless integration, robust protection, and enhanced IT capabilities for digital transformation.</p>
           </div>
 
           <div className="con3-text">
             <div className="icon-text">
               <PiCertificateFill className="icon" />
               <div>
-                <h5>Industry Certified</h5>
-                <p>We are out to dominate the cyber security market both locally and globally.</p>
+                <h5>Vision</h5>
+                <p>To be the trusted leader in cloud and cybersecurity solutions,
+                known for our excellence in service and strategic partnerships.</p>
               </div>
             </div>
           </div>
@@ -77,8 +78,9 @@ const Home = () => {
             <div className="icon-text">
               <BiSolidCertification className="icon" />
               <div>
-                <h5>High Professional Members</h5>
-                <p>Our cybersecurity professionals are trained to find weaknesses in databases, networks, and businesses.</p>
+                <h5>Mission</h5>
+                <p>To empower businesses with innovative cloud solutions and
+                robust cybersecurity strategies.</p>
               </div>
             </div>
           </div>
@@ -87,8 +89,8 @@ const Home = () => {
             <div className="icon-text">
               <GiTechnoHeart className="icon" />
               <div>
-                <h5>Infrastructure Integration Technology</h5>
-                <p>Our integration infrastructure consists of a set of middleware technologies that provide advanced protection.</p>
+                <h5>Strategy</h5>
+                <p>Delivering tailored, secure solutions to drive innovation, efficiency, and digital transformation.</p>
               </div>
             </div>
           </div>
@@ -125,8 +127,8 @@ const Home = () => {
       <div className="sec-solutions__section">
         {/* security solutions section */}
         <div className="sec-heading">
-          <h4>OUR SECURITY SOLUTIONS</h4>
-          <p>Our security is protection from or resilience against potential harm [or other unwanted coercive change] caused by others, by restraining the freedom of others to act. Beneficiaries of security may be persons and social groups, objects and institutions, ecosystems, or any other entity or phenomenon vulnerable to unwanted change.</p>
+          <h4>OUR SOLUTIONS</h4>
+          <p>We deliver robust cybersecurity, scalable cloud solutions, and reliable server infrastructure tailored to meet the diverse needs of modern businesses. Our solutions safeguard your digital assets, enhance productivity, and ensure your IT environment is secure, efficient, and aligned with your strategic goals.</p>
         </div>
         <div className="sec-solutions">
           {/* list of security solutions */}
@@ -168,7 +170,9 @@ const Home = () => {
         <div className="choose-left__contents">
           <div className="choose-sec__header">
             <h4>WHY CHOOSE US?</h4>
-            <p>According to a study by McAfee and the CSS, based on data collected by Vanson Bourne, the world economy loses more than $1 trillion each year due to cybercrime. Political, ethical and social incentives can also drive attackers</p>
+            <p>We are dedicated to delivering top-notch services that exceed our clients' expectations and
+drive their success. Our team of experienced professionals works tirelessly to provide
+innovative, reliable, and secure solutions tailored to meet the unique needs of each client.</p>
           </div>
           <div className="choose-sec__content">
             <div className="reasons">
