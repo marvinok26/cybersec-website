@@ -381,17 +381,23 @@ body {
   font-weight: 400;
 }
 
-.icon-text {
+.social-icons {
   display: flex;
-  align-items: center;
-  height: 60px;
+  gap: 15px;
 }
 
-.icon {
-  margin-right: 20px;
-  margin-left: 10px;
-  font-size: 35px;
+.social-icons .icon {
+  font-size: 16px; 
+  color: #ffffff;
+  transition: color 0.3s;
+  text-decoration: none;
+  margin-top: 5px;
 }
+
+.social-icons .icon:hover {
+  color: #007bff; 
+}
+
 
 .btn-primary {
   display: block;
@@ -826,7 +832,11 @@ body {
 .footer .icons {
   display: flex;
   gap: 30px;
-  margin-top: 30px;
+  margin-top: 20px;
+}
+
+.footer .icons i a{
+  text-decoration: none;
 }
 
 .footer .icons i {
@@ -1048,7 +1058,8 @@ body {
 }
 
 .about-text {
-  max-width: 800px;
+  max-width: 1000px;
+  text-align:center;
 }
 
 .about-text h1 {

@@ -10,15 +10,16 @@ const ContactUs = () => {
         <div className="contact-details">
           <div className="contact-item">
             <FaMapMarkerAlt className="contact-icon" />
-            <p>123 Main Street, Cityville, State, Country</p>
+            <p>4th Ngong Avenue Towers, 4th Ngong
+            Avenue, Nairobi - Kenya.</p>
           </div>
           <div className="contact-item">
             <FaPhoneAlt className="contact-icon" />
-            <p>(123) 456-7890</p>
+            <p>+254 782 180 507</p>
           </div>
           <div className="contact-item">
             <FaEnvelope className="contact-icon" />
-            <p>info@example.com</p>
+            <p>info@alamatgroup.com</p>
           </div>
         </div>
         <p>Have a question or inquiry? Feel free to reach out to us using the contact information above or fill out the form below.</p>

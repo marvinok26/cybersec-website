@@ -58,7 +58,7 @@ const Services = () => {
     <div className="services-container">
       <div className="services-header">
         <h1>Our Services</h1>
-        <p>We offer a wide range of cybersecurity services to protect your business from various threats.</p>
+        <p>We offer a diverse range of services to meet your business needs. From cutting-edge cloud solutions to comprehensive cybersecurity, our team delivers tailored, scalable, and secure technologies designed to drive innovation and ensure optimal performance</p>
       </div>
       <div className="services-list">
         {servicesData.map((service, index) => (

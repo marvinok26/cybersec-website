@@ -17,7 +17,7 @@ const About = () => {
         <div className="about-text">
           <h1>ABOUT OUR COMPANY</h1>
           <p>
-            Cybersecurity companies are paid to manage the maintenance and support of all the systems within an enterprise network. All the functions, right from systems monitoring and security patching to recovering lost data and repairing corrupt systems, are handled by the cybersecurity company.
+          We are a leading technology partner offering advanced cloud solutions and comprehensive cybersecurity services. We provide secure, scalable infrastructure to drive innovation and protect against evolving threats. Our expert team collaborates with clients to deliver tailored solutions that ensure seamless integration and support for digital transformation.
           </p>
         </div>
       </div>
@@ -49,7 +49,10 @@ const About = () => {
       <div className="about-mission">
         <h2>Our Mission</h2>
         <p>
-          Our mission is to provide the best cybersecurity services to ensure the safety and security of our clients' data and systems. We strive to lead the industry with innovative solutions and unparalleled customer service.
+        Our mission is to empower businesses with innovative cloud solutions and
+robust cybersecurity strategies. We are committed to delivering secure,
+scalable infrastructure that drives efficiency and protects against evolving
+threats.
         </p>
       </div>
 
