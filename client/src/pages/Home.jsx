@@ -34,6 +34,7 @@ const Home = () => {
   return (
     <div className="home-container1">
       <div className="home-contents">
+        
         {/* Sliding text */}
         <div className="sliding-text">
           <h1>DIGITAL TRANSFORMATION AND SECURE SOLUTIONS.</h1>
