@@ -1,0 +1,191 @@
+@keyframes slide-in-right {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .animate-slide-in-right {
+    animation: slide-in-right 0.6s ease-out both;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .animate-rotate {
+    animation: rotate 5s linear infinite;
+  }
+  
+
+  /*================================================
+  About Area CSS
+  =================================================*/
+.about-area {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.about-content {
+    padding-left: 10px;
+}
+
+span {
+    font-size: var(--font-size);
+    color: var(--main-color);
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 15px;
+    font-family: var(--font-jost);
+}
+
+h3 {
+    font-size: 42px;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    position: relative;
+}
+
+.default-btn {
+    padding: 15.8px 35px;
+    text-align: center;
+    color: var(--black-color) !important;
+    font-size: var(--font-size);
+    font-weight: 600;
+    transition: var(--transition);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 10px;
+    z-index: 0;
+    background: var(--btn-gradient-color);
+    box-shadow: none;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: var(--font-jost);
+}
+
+.default-btn:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 550px;
+    height: 550px;
+    margin: auto;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    z-index: -1;
+    transform-origin: top center;
+    transform: translateX(-50%) translateY(-5%) scale(0.4);
+    transition: transform 0.9s;
+}
+
+.default-btn:hover {
+    color: var(--white-color);
+}
+
+.default-btn:hover:before {
+    transition: transform 1s;
+    transform: translateX(-45%) translateY(0) scale(1);
+    transform-origin: bottom center;
+}
+
+/*================================================
+  About Shape CSS
+  =================================================*/
+.about-shape-1 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 50px;
+    z-index: -1;
+}
+
+/*================================================
+  Choose Area CSS
+  =================================================*/
+  .choose-area {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  }
+  
+  .single-choose-card {
+    transition: all 0.3s ease;
+  }
+  
+  .single-choose-card:hover .choose-content h3 a {
+    color: var(--main-color);
+  }
+  
+  .choose-shape-1,
+  .choose-shape-2 {
+    width: 100%;
+  }
+  
+  /*================================================
+    Section Title CSS
+    =================================================*/
+  .section-title {
+    max-width: 630px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .section-title h2 b {
+    background: radial-gradient(circle, #a66bff, #c666ef, #dd62df, #ee61cf, #fb64bf);
+  }
+  
+
+  /* Services Area CSS */
+@keyframes moveleftbounce {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(-10px); }
+}
+
+@keyframes rotateme {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Partner Area CSS */
+.partner-area {
+  background-image: url('./images/partner/partner-bg.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.partner-card a {
+  display: block;
+  position: relative;
+}
+
+.partner-card a:hover img:nth-child(1) {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.partner-card a:hover img:nth-child(2) {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Transition variable */
+:root {
+  --transition: opacity 0.3s ease;
+}

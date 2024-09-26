@@ -11,6 +11,7 @@ import AboutUs from './pages/AboutUs';
 import Services from './pages/Services';
 import ContactUs from './pages/ContactUs';
 import Careers from './pages/Careers';
+import Page from './pages/home/Main.jsx';
 
 const router = createBrowserRouter([
   {
@@ -18,7 +19,7 @@ const router = createBrowserRouter([
     element: <App/>,
     errorElement: <ErrorPage/>,
     children: [
-      {index: true, element: <Home />},
+      {index: true, element: <Page />},
       {path: "about", element: <AboutUs />},
       {path: "services", element: <Services />},
       {path: "careers", element: <Careers />},
