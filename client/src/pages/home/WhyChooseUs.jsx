@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-
-
 import chooseImage1 from './images/choose/choose-1.png';
 import chooseImage2 from './images/choose/choose-2.png';
 import chooseImage3 from './images/choose/choose-3.png';

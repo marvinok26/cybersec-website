@@ -3,7 +3,6 @@ import HeroSlider from "./HeroSlider";
 import WhoWeAre from "./WhoWeAre";
 import WhyChooseUs from "./WhyChooseUs";
 import ServicesCard from "./ServicesCard";
-import Partners from "./Patners";
 
 import './styles.scss'
 
@@ -12,7 +11,7 @@ import './styles.scss'
 export default function Page() {
   return (
     <>
-      
+
 
       <HeroSlider />
 
@@ -24,8 +23,6 @@ export default function Page() {
 
 
       <ServicesCard />
-
-      <Partners />
     </>
   )
 }

@@ -21,42 +21,6 @@ This files table contents are outlined below>>>>>
 ** - Services Area CSS-
 ** - Services Details Area CSS
 ** - Choose Area CSS
-** - Video Area CSS
-** - Projects Area CSS
-** - Projects Details Area CSS
-** - Testimonials Area CSS
-** - Pricing Area CSS
-** - Blog Area CSS
-** - Blog Details Area CSS
-** - Skill Area CSS
-** - Features Area CSS
-** - Talk Area CSS
-** - Team Area CSS
-** - Overview Area CSS
-** - Page Banner Area CSS
-** - Gallery Area CSS
-** - FAQ Area CSS
-** - Events Area CSS
-** - Events Details Area CSS
-** - Career Area CSS
-** - Apply Area CSS
-** - Career Details Area CSS
-** - Profile Authentication Area CSS
-** - Membership Levels Area CSS
-** - Purchase Guide Area CSS
-** - Terms of Service Area CSS
-** - Privacy Policy Area CSS
-** - 404 Error Area CSS
-** - Coming Soon Area CSS
-** - Courses Area CSS
-** - Courses Details Area CSS
-** - Products Area CSS
-** - Cart Area CSS
-** - Wishlist Area CSS
-** - Checkout Area CSS
-** - Products Details Area CSS
-** - Widget Sidebar CSS
-** - Pagination CSS
 
 */
 
@@ -711,51 +675,6 @@ Default CSS
     transform: translateY(-20%) translateX(-10%);
     animation: animationFramesOne 20s infinite linear;
     z-index: -1;
-  }
-  
-  /*================================================
-  Partner Area CSS
-  =================================================*/
-  .partner-area {
-    background-image: url(./images/partner/partner-bg.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  .partner-card {
-    text-align: center;
-    a {
-      display: block;
-      position: relative;
-  
-      img {
-        transition: var(--transition);
-        margin: auto;
-        width: auto !important;
-  
-        &:nth-child(2) {
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          margin: 0 auto;
-          opacity: 0;
-          visibility: hidden;
-        }
-      }
-      &:hover {
-        img {
-          &:nth-child(1) {
-            opacity: 0;
-            visibility: hidden;
-          }
-          &:nth-child(2) {
-            opacity: 1;
-            visibility: visible;
-          }
-        }
-      }
-    }
   }
   
   /*================================================

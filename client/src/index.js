@@ -8,10 +8,11 @@ import App from './components/App.jsx';
 import Home from './pages/Home';
 import ErrorPage from './pages/ErrorPage';
 import AboutUs from './pages/AboutUs';
-import Services from './pages/Services';
+// import Services from './pages/Services';
 import ContactUs from './pages/ContactUs';
 import Careers from './pages/Careers';
 import Page from './pages/home/Main.jsx';
+import Services from './pages/services/Services.jsx';
 
 const router = createBrowserRouter([
   {
