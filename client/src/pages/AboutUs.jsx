@@ -2,11 +2,8 @@ import React, { useEffect, useState, useRef } from 'react';
 
 import { FaUserTie, FaHandsHelping, FaCogs, FaWrench } from 'react-icons/fa'
 import CountUp from 'react-countup';
-import { FaCheckCircle, FaArrowRight } from 'react-icons/fa';
-import { FiUsers } from 'react-icons/fi';
-import { MdWorkOutline } from 'react-icons/md';
 
-import { FaCheck, FaUsers, FaProjectDiagram } from 'react-icons/fa';
+import { FaCheck } from 'react-icons/fa';
 import image1 from '../images/abtImg1.jpg';
 import image2 from '../images/abtImg2.jpg';
 import image3 from '../images/abtImg3.jpg';
@@ -43,7 +40,7 @@ const About = () => {
   }, []);
 
   return (
-    <div className="relative">
+    <div className="relative mt-28">
       {/* Main About Us Section */}
       <div className="bg-[#0A1F32] m-auto">
         {/* Title */}

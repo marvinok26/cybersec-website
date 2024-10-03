@@ -96,7 +96,7 @@ const Services = () => {
   }, [isInView]);
 
   return (
-    <div className='py-4 px-8'>
+    <div className='py-4 px-8 mt-[5rem]'>
       {/* Optimize Solutions */}
       <section className="pb-[1rem]">
         <div className="container mx-auto">
