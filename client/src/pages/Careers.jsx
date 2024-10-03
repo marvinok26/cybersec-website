@@ -18,7 +18,7 @@ const Careers = () => {
   const categories = ['View All', 'Cybersecurity', 'Cloud Infrastructure', 'Data Encryption Engineer'];
 
   return (
-    <div className="p-8">
+    <div className="p-8 mt-[4rem]">
       {/* "We're Hiring" Button */}
       <button className="border-2 border-solid border-black text-black px-2 py-1 rounded-full mb-6">
         We're hiring

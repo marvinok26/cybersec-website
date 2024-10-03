@@ -52,7 +52,7 @@ const HeroSlider = () => {
   }, []);
 
   return (
-    <div className="relative overflow-hidden h-[600px]">
+    <div className="relative overflow-hidden h-[600px] mt-[5rem]">
       {slides.map((slide, index) => (
         <div
           key={slide.id}
@@ -65,13 +65,13 @@ const HeroSlider = () => {
             alt={`Hero Background ${slide.id}`}
             className="object-cover w-full h-full"
           />
-          <div className="absolute inset-0 bg-black opacity-40"></div>
-          <div className="absolute inset-0 flex items-center justify-start px-10">
+          <div className="absolute inset-0 bg-black opacity-40 "></div>
+          <div className="absolute inset-0 flex items-center justify-start w-[800px] px-10 mt-[12rem]">
             <div className="text-white max-w-4xl space-y-6 z-20">
               <span className="block text-xl font-semibold text-yellow-400">
                 {slide.subtitle}
               </span>
-              <h1 className="text-5xl font-bold">{slide.title}</h1>
+              <h1 className="text-5xl font-bold text-white">{slide.title}</h1>
               <p className="text-lg text-gray-300">{slide.description}</p>
               <Link
                 to={slide.buttonLink}

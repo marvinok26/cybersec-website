@@ -6,7 +6,7 @@ const ContactUs = () => {
   return (
     <>
       {/* Map Section */}
-      <div className="map-sec">
+      <div className="map-sec mt-[5rem]">
         <iframe
           className="w-full md:h-[400px] h-[200px]"
           frameBorder="0"
