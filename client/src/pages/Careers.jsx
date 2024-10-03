@@ -8,12 +8,14 @@ const Careers = () => {
 
   // Update jobs to display based on selected category
   useEffect(() => {
-    setJobsToShow(jobsData[selectedCategory]); // Show all jobs of selected category
+    setJobsToShow(jobsData[selectedCategory] || []); // Ensure there's a fallback to avoid undefined
   }, [selectedCategory]);
 
   const handleCategoryClick = (category) => {
     setSelectedCategory(category); // Set category and update jobs list
   };
+
+  const categories = ['View All', 'Cybersecurity', 'Cloud Infrastructure', 'Data Encryption Engineer'];
 
   return (
     <div className="p-8">
@@ -22,17 +24,15 @@ const Careers = () => {
         We're hiring
       </button>
 
-      {/* Heading */}
+      {/* Heading and Subtitle */}
       <h1 className="text-4xl font-bold mb-4">Be part of our mission</h1>
-
-      {/* Subtitle */}
       <p className="text-lg mb-8 w-[700px]">
         We are looking for passionate people to join us on our mission. We value flat hierarchies, clear communication, full ownership, and responsibility.
       </p>
 
       {/* Category buttons */}
       <div className="flex flex-wrap gap-2 mb-6">
-        {['View All', 'Cybersecurity', 'Cloud Infrastructure', 'Data Encryption Engineer'].map((category) => (
+        {categories.map((category) => (
           <button
             key={category}
             onClick={() => handleCategoryClick(category)}
@@ -45,18 +45,18 @@ const Careers = () => {
 
       {/* Job listings */}
       <div className="flex flex-wrap gap-2 mb-6">
-        {jobsToShow.map((job) => (
-          <div key={job.id} className="w-full border border-gray-300 p-4 rounded-lg mb-4 shadow-lg relative">
-            <h2 className="text-2xl font-bold mb-4">{job.title}</h2>
-            <p className="mb-6">{job.description}</p>
+        {jobsToShow.map(({ id, title, description, location, type }) => (
+          <div key={id} className="w-full border border-gray-300 p-4 rounded-lg mb-4 shadow-lg relative">
+            <h2 className="text-2xl font-bold mb-4">{title}</h2>
+            <p className="mb-6">{description}</p>
 
             {/* Job Location and Job Type */}
             <div className="flex gap-4 mb-4">
               <span className="border-2 border-solid border-black text-black px-2 py-1 rounded-full">
-                {job.location}
+                {location}
               </span>
               <span className="border-2 border-solid border-black text-black px-2 py-1 rounded-full">
-                {job.type}
+                {type}
               </span>
             </div>
 

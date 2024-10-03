@@ -14,13 +14,13 @@ const ContactUs = () => {
           marginHeight="0"
           marginWidth="0"
           src="https://maps.google.com/maps?q=4th%20Avenue%20Towers,%20along%20Ngong%20Avenue,%20Upper%20Hill,%20Nairobi&t=&z=14&ie=UTF8&iwloc=B&output=embed"
-          title="Google Maps Location for Real Plan Consultants"
+          title="Google Maps Location for Alamat Group Limited"
           loading="lazy"
         ></iframe>
       </div>
 
       {/* Contact Details Section */}
-      <div className=" py-10">
+      <div className="py-10">
         <div className="container mx-auto">
           <div className="flex justify-center">
             <div className="w-full max-w-[68rem] bg-blue-500 rounded-lg p-8 shadow-lg">
@@ -34,8 +34,7 @@ const ContactUs = () => {
                   <div className="ml-4">
                     <h6 className="font-semibold text-lg text-white">Phone</h6>
                     <p className="text-sm text-white">
-                      <span>(629) 555-0129</span> <br />
-                      <span>01254693326</span>
+                      <span>+254 782 180 507</span>
                     </p>
                   </div>
                 </div>
@@ -48,7 +47,9 @@ const ContactUs = () => {
                   <div className="ml-4">
                     <h6 className="font-semibold text-lg text-white">Location</h6>
                     <p className="text-sm text-white">
-                      4517 Washington Av, Kentucky <br /> 39495
+                      4th Ngong Avenue Towers, <br />
+                      4th Ngong Avenue, Nairobi, <br />
+                      Kenya
                     </p>
                   </div>
                 </div>
@@ -61,8 +62,7 @@ const ContactUs = () => {
                   <div className="ml-4">
                     <h6 className="font-semibold text-lg text-white">Email</h6>
                     <p className="text-sm text-white">
-                      <span>demo@gmail.com</span> <br />
-                      <span>admin@yahoo.com</span>
+                      <span>info@alamatgroup.com</span>
                     </p>
                   </div>
                 </div>
@@ -116,22 +116,25 @@ const ContactUs = () => {
                           type="text"
                           placeholder="Your Name"
                           className="form-control style-border w-full"
+                          required
                         />
                       </div>
 
                       <div className="form-group">
                         <input
-                          type="text"
+                          type="email"
                           placeholder="Your Email"
                           className="form-control style-border w-full"
+                          required
                         />
                       </div>
 
                       <div className="form-group">
                         <input
-                          type="text"
+                          type="tel"
                           placeholder="Phone Number"
                           className="form-control style-border w-full"
+                          required
                         />
                       </div>
 
@@ -142,6 +145,7 @@ const ContactUs = () => {
                           placeholder="Subject"
                           className="form-control style-border w-full"
                           list="subject-options"
+                          required
                         />
                         <datalist id="subject-options">
                           <option value="Subject 01" />
@@ -154,6 +158,7 @@ const ContactUs = () => {
                         <textarea
                           placeholder="Message here.."
                           className="form-control style-border w-full h-32"
+                          required
                         />
                       </div>
 
