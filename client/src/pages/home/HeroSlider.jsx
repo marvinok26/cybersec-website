@@ -15,27 +15,27 @@ const slides = [
   {
     id: 1,
     bgImage: heroBg1,
-    subtitle: "WE ARE LEADING TECHNOLOGY SOLUTIONS PROVIDING COMPANY!",
-    title: "We Are Digital Agency & Tech Solution",
-    description: "We are leading technology solutions providing company all over the world for over 40 years. Lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor.",
+    subtitle: "WE ARE A LEADING TECHNOLOGY SOLUTIONS PROVIDING COMPANY",
+    title: "We deliver comprehensive IT integration, cybersecurity, and cloud solutions",
+    description: "Our expertise spans across key areas, including advanced cybersecurity strategies, cutting-edge cloud services, robust office automation and collaboration tools, and end-to-end datacenter and networking solutions.",
     buttonText: "Get Started",
     buttonLink: "/contact"
   },
   {
     id: 2,
     bgImage: heroBg2,
-    subtitle: "WE ARE LEADING TECHNOLOGY SOLUTIONS PROVIDING COMPANY!",
-    title: "Excellent IT Services For Your Success",
-    description: "We are leading technology solutions providing company all over the world for over 40 years. Lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor.",
+    subtitle: "WE UNDERSTAND THE CHALLENGES FACED BY MODERN ENTERPRISES",
+    title: "We provide customized solutions for your business operations",
+    description: "Whether it’s building resilient Security Operation Centers (SOCs), migrating your infrastructure to the cloud, or designing and managing state- of-the-art datacenters, Alamat Group Limited is your trusted partner for success",
     buttonText: "Get Started",
     buttonLink: "/contact"
   },
   {
     id: 3,
     bgImage: heroBg3,
-    subtitle: "WE ARE LEADING TECHNOLOGY SOLUTIONS PROVIDING COMPANY!",
-    title: "Get The Best IT Solution From Us",
-    description: "We are leading technology solutions providing company all over the world for over 40 years. Lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor.",
+    subtitle: "WE ARE DRIVEN BY INNOVATION & EXCELLENCE",
+    title: "Leveraging industry-leading technologies from top vendors like Microsoft and more",
+    description: "We are committed to helping you navigate the complexities of today’s IT landscape, ensuring that your organization is equipped to thrive in the digital age",
     buttonText: "Get Started",
     buttonLink: "/contact"
   }
@@ -68,14 +68,14 @@ const HeroSlider = () => {
           <div className="absolute inset-0 bg-black opacity-40 "></div>
           <div className="absolute inset-0 flex items-center justify-start w-[800px] px-10 mt-[12rem]">
             <div className="text-white max-w-4xl space-y-6 z-20">
-              <span className="block text-xl font-semibold text-yellow-400">
+              <span className="block text-xl font-semibold text-[#e3364d]">
                 {slide.subtitle}
               </span>
               <h1 className="text-5xl font-bold text-white">{slide.title}</h1>
               <p className="text-lg text-gray-300">{slide.description}</p>
               <Link
                 to={slide.buttonLink}
-                className="inline-block bg-yellow-400 text-black py-3 px-6 rounded-lg hover:bg-yellow-500"
+                className="inline-block bg-[#e3364d] text-white py-3 px-6 rounded-lg hover:bg-[#e65369]"
               >
                 {slide.buttonText}
               </Link>

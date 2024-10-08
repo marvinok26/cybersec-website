@@ -17,12 +17,12 @@ export default function Page() {
 
       <WhoWeAre />
 
+      <ServicesCard />
+
       <div className="bg-with-F5F5F5-color">
         <WhyChooseUs />
       </div>
 
-
-      <ServicesCard />
     </>
   )
 }

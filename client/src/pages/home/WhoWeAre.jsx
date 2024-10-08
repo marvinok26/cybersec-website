@@ -34,7 +34,7 @@ const WhoWeAre = () => {
                 data-aos-duration="800"
                 data-aos-once="true"
               >
-                <span className="text-lg text-main font-semibold mb-4 inline-block">
+                <span className="text-lg text-main font-semibold mb-4 inline-block text-[#e3364d]">
                   WHO WE ARE
                 </span>
                 <h3 className="text-4xl mb-4 leading-snug relative">
@@ -51,7 +51,7 @@ const WhoWeAre = () => {
                   invidunt ut labore.
                 </p>
                 <div className="about-btn mt-6">
-                  <Link to="/about" className="default-btn">
+                  <Link to="/about" className="default-btn text-[#ffffff]">
                     Know More About Us
                   </Link>
                 </div>
