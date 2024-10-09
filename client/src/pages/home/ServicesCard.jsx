@@ -15,7 +15,7 @@ const ServicesCard = () => {
     <div className="services-area bg-black pt-24 pb-24">
       <div className="container mx-auto">
         <div className="section-title text-center mb-10">
-          <span className="text-main-color font-semibold">SERVICES</span>
+          <span className="text-main-color font-semibold">OUR SOLUTIONS & SERVICES</span>
           <h2 className="text-white">
             We Provide the Best Quality <b>Services</b>
           </h2>
@@ -29,23 +29,23 @@ const ServicesCard = () => {
           {[
             {
               img: services1,
-              title: "Software Development",
-              desc: "Lorem ipsum dolor sit amet con setetur sadipscing elitr sed…",
+              title: "Cybersecurity",
+              desc: "Pen-testing, email security, SOC, SIEM, SOAR, Cyber threat intelligence, Data loss prevention…",
             },
             {
               img: services2,
-              title: "App Development",
-              desc: "Lorem ipsum dolor sit amet con setetur sadipscing elitr sed…",
+              title: "Cloud Solutions",
+              desc: "Azure & AWS expertise, Architecture review, Cost mgt & optimization, Disaster recovery, Backup & Storage, BCP & SRT",
             },
             {
               img: services3,
-              title: "Web Development",
-              desc: "Lorem ipsum dolor sit amet con setetur sadipscing elitr sed…",
+              title: "Office Automation",
+              desc: "MS 365 & Office Optimization, Email migration, Power Apps & MS Copilot, Sharepoint, Training & Support…",
             },
             {
               img: services4,
-              title: "Analytic Solutions",
-              desc: "Lorem ipsum dolor sit amet con setetur sadipscing elitr sed…",
+              title: "Datacenter & Networking",
+              desc: "Datacenter design & mgt, End to end datacenter solutions, Server & Storage solutions, Networking solutions…",
             },
           ].map((service, index) => (
             <div key={index} className="lg:w-1/4 md:w-1/2 p-4">

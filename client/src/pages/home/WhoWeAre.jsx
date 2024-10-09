@@ -38,17 +38,13 @@ const WhoWeAre = () => {
                   WHO WE ARE
                 </span>
                 <h3 className="text-4xl mb-4 leading-snug relative">
-                  We Are All In One IT Solution & Technology Company
+                We are your trusted technology business partner
                 </h3>
                 <p className="mb-4">
-                  We are leading technology solutions providing company all over
-                  the world doing over 40 years lorem ipsum dolor sit amet.
+                With a deep understanding of the digital challenges facing modern enterprises, we provide tailored services to secure and optimize your business operations.
                 </p>
                 <p className="mb-4">
-                  We are leading technology solutions providing company all over
-                  the world doing over 40 years. Lorem ipsum dolor sit amet
-                  consetetur sadipscing elitr sed diam nonumy eirmod tempor
-                  invidunt ut labore.
+                Our expertise spans advanced cybersecurity strategies, cutting-edge cloud solutions, and end-to-end data center and networking solutions. We are committed to helping businesses thrive in today’s digital age by providing secure, scalable, and efficient technology solutions.
                 </p>
                 <div className="about-btn mt-6">
                   <Link to="/about" className="default-btn text-[#ffffff]">
