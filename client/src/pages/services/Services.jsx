@@ -24,7 +24,6 @@ const Services = () => {
       {/* Why Choose Us */}
       <Accordion />
 
-
       {/* CTA */}
       <CTABlock />
 
