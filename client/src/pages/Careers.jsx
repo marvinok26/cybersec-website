@@ -19,13 +19,14 @@ const Careers = () => {
 
   return (
     <div className="p-8 mt-[4rem]">
+      <div className='border-2 border-solid border-gray-300  p-3'>
       {/* "We're Hiring" Button */}
-      <button className="border-2 border-solid border-black text-black px-2 py-1 rounded-full mb-6">
+      <button className="border-2 border-solid border-black bg-[#2DB1A3] text-white px-2 py-1 rounded-full mb-6">
         We're hiring
       </button>
 
       {/* Heading and Subtitle */}
-      <h1 className="text-4xl font-bold mb-4">Be part of our mission</h1>
+      <h1 className="text-4xl font-bold mb-4">Be part of our <span className='text-[#e3364d]'>Mission</span></h1>
       <p className="text-lg mb-8 w-[700px]">
         We are looking for passionate people to join us on our mission. We value flat hierarchies, clear communication, full ownership, and responsibility.
       </p>
@@ -36,11 +37,12 @@ const Careers = () => {
           <button
             key={category}
             onClick={() => handleCategoryClick(category)}
-            className="border-2 border-solid border-black text-black px-3 py-1 rounded-full hover:bg-gray-100 transition"
+            className="border-2 border-solid border-black text-white bg-[#2DB1A3] px-3 py-1 rounded-full hover:bg-[#62d3c7] transition"
           >
             {category}
           </button>
         ))}
+      </div>
       </div>
 
       {/* Job listings */}
@@ -52,10 +54,10 @@ const Careers = () => {
 
             {/* Job Location and Job Type */}
             <div className="flex gap-4 mb-4">
-              <span className="border-2 border-solid border-black text-black px-2 py-1 rounded-full">
+              <span className="border-2 border-solid border-black text-white bg-[#e3364d] hover:bg-[#e76e7f] px-2 py-1 rounded-full">
                 {location}
               </span>
-              <span className="border-2 border-solid border-black text-black px-2 py-1 rounded-full">
+              <span className="border-2 border-solid border-black text-white bg-[#e3364d] hover:bg-[#e76e7f] px-2 py-1 rounded-full">
                 {type}
               </span>
             </div>
