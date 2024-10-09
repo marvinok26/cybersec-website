@@ -6,7 +6,6 @@ import './index.css';
 
 // Lazy load components for better performance
 const App = lazy(() => import('./components/App.jsx'));
-const Home = lazy(() => import('./pages/Home'));
 const ErrorPage = lazy(() => import('./pages/ErrorPage'));
 const AboutUs = lazy(() => import('./pages/AboutUs'));
 const ContactUs = lazy(() => import('./pages/ContactUs'));
