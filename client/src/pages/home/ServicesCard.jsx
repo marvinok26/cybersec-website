@@ -12,7 +12,7 @@ import servicesShape2 from './images/services/services-shape-2.png';
 
 const ServicesCard = () => {
   return (
-    <div className="services-area bg-black pt-24 pb-24">
+    <div className="services-area bg-black pt-24 pb-24 relative"> {/* Ensure this div is relative */}
       <div className="container mx-auto">
         <div className="section-title text-center mb-10">
           <span className="text-main-color font-semibold">OUR SOLUTIONS & SERVICES</span>
@@ -78,11 +78,11 @@ const ServicesCard = () => {
         </div>
       </div>
 
-      {/* Shape Images */}
-      <div className="services-shape-1 absolute top-20 left-5 animate-moveleftbounce">
+      {/* Shape Images with Effects */}
+      <div className="absolute top-20 left-5 animate-moveleftbounce"> {/* Ensure animations are applied */}
         <img src={servicesShape1} alt="shape" width={230} height={272} />
       </div>
-      <div className="services-shape-2 absolute top-10 right-5 animate-rotateme">
+      <div className="absolute top-10 right-5 animate-rotateme">
         <img src={servicesShape2} alt="shape" width={140} height={125} />
       </div>
     </div>
