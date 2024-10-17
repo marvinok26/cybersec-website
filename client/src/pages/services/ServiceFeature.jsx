@@ -1,83 +1,44 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useRef } from 'react';
+
 import { FaDesktop, FaCloud, FaLock, FaNetworkWired, FaShieldAlt, FaRegChartBar, FaCode } from 'react-icons/fa';
 
 const ServiceFeature = () => {
-  const [isInView, setIsInView] = useState(false);
   const sectionRef = useRef(null);
-  const [projectSuccess, setProjectSuccess] = useState(0);
-  const [happyClients, setHappyClients] = useState(0);
 
   // Service data
   const servicesData = [
-    { number: '01', icon: <FaRegChartBar className="text-4xl text-[#2DB1A3] group-hover:text-[#e3364d]" />, title: 'Product Design', description: 'We approached AviaTech with complex project deliver' },
-    { number: '02', icon: <FaCloud className="text-4xl text-[#2DB1A3] group-hover:text-[#e3364d]" />, title: 'IT Management', description: 'We approached AviaTech with complex project deliver' },
-    { number: '03', icon: <FaLock className="text-4xl text-[#2DB1A3] group-hover:text-[#e3364d]" />, title: 'Data Security', description: 'We approached AviaTech with complex project deliver' },
-    { number: '04', icon: <FaNetworkWired className="text-4xl text-[#2DB1A3] group-hover:text-[#e3364d]" />, title: 'Infrastructure Plan', description: 'We approached AviaTech with complex project deliver' },
-    { number: '05', icon: <FaShieldAlt className="text-4xl text-[#2DB1A3] group-hover:text-[#e3364d]" />, title: 'Firewall Advancement', description: 'We approached AviaTech with complex project deliver' },
-    { number: '06', icon: <FaDesktop className="text-4xl text-[#2DB1A3] group-hover:text-[#e3364d]" />, title: 'Desktop Computing', description: 'We approached AviaTech with complex project deliver' },
-    { number: '07', icon: <FaRegChartBar className="text-4xl text-[#2DB1A3] group-hover:text-[#e3364d]" />, title: 'Market Research', description: 'We approached AviaTech with complex project deliver' },
-    { number: '08', icon: <FaCode className="text-4xl text-[#2DB1A3] group-hover:text-[#e3364d]" />, title: 'Web Development', description: 'We approached AviaTech with complex project deliver' },
+    { number: '01', icon: <FaRegChartBar className="text-4xl text-[#2DB1A3] group-hover:text-[#e3364d]" />, title: 'Cybersecurity Solutions', description: 'We provide advanced cybersecurity services such as VAPT, email security, SOC, CTI, and more to protect your business from evolving digital threats.' },
+{ number: '02', icon: <FaCloud className="text-4xl text-[#2DB1A3] group-hover:text-[#e3364d]" />, title: 'Cloud Solutions', description: 'We offer comprehensive cloud services, including migration, cost optimization, and disaster recovery, ensuring your infrastructure is scalable and secure.' },
+{ number: '03', icon: <FaLock className="text-4xl text-[#2DB1A3] group-hover:text-[#e3364d]" />, title: 'Data Loss Prevention (DLP)', description: 'Implement robust DLP solutions to protect sensitive data across endpoint, network, and cloud environments.' },
+{ number: '04', icon: <FaNetworkWired className="text-4xl text-[#2DB1A3] group-hover:text-[#e3364d]" />, title: 'Datacenter and Networking Solutions', description: 'We design and manage state-of-the-art datacenters, ensuring robust, scalable infrastructure for your growing business needs.' },
+{ number: '05', icon: <FaShieldAlt className="text-4xl text-[#2DB1A3] group-hover:text-[#e3364d]" />, title: 'Firewall and Security Solutions', description: 'Protect your network from cyberattacks with advanced firewall solutions from top vendors like Fortinet and Sophos.' },
+{ number: '06', icon: <FaDesktop className="text-4xl text-[#2DB1A3] group-hover:text-[#e3364d]" />, title: 'Office Automation & Collaboration', description: 'Streamline your business with optimized Microsoft 365, Office 365, and enhanced collaboration tools like Microsoft Teams.' },
+{ number: '07', icon: <FaRegChartBar className="text-4xl text-[#2DB1A3] group-hover:text-[#e3364d]" />, title: 'Cyber Threat Intelligence (CTI)', description: 'Stay ahead of threats with actionable intelligence, monitoring risks from the internet, dark web, and threat feeds.' },
+{ number: '08', icon: <FaCode className="text-4xl text-[#2DB1A3] group-hover:text-[#e3364d]" />, title: 'Custom Business Solutions with Power Apps', description: 'Build tailored business applications with Power Apps, enhancing productivity and efficiency without extensive coding knowledge.' },
+
   ];
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries[0].isIntersecting) {
-          setIsInView(true);
-        }
-      },
-      { threshold: 0.5 } // Activate when 50% of the section is visible
-    );
-
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
-
-    return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
-      }
-    };
-  }, []);
-
-  useEffect(() => {
-    if (isInView) {
-      // Simulate counter for Project Success
-      const successInterval = setInterval(() => {
-        setProjectSuccess((prev) => (prev < 98 ? prev + 1 : 98));
-      }, 20);
-
-      // Simulate counter for Happy Clients
-      const clientsInterval = setInterval(() => {
-        setHappyClients((prev) => (prev < 63 ? prev + 1 : 63));
-      }, 30);
-
-      return () => {
-        clearInterval(successInterval);
-        clearInterval(clientsInterval);
-      };
-    }
-  }, [isInView]);
 
   return (
     <div ref={sectionRef}>
       {/* Feature Section */}
-      <section className="feature-home2 pt-4 pb-[130px]">
+      <section className="feature-home2 mt-4 pb-[50px]">
         <div className="container mx-auto">
-          <div className="row">
+          <div className="row mb-8">
             <div className="col-lg-12">
-              <div className="heading-title text-center max-w-[680px] mx-auto mb-[130px]">
+              <div className="heading-title text-center max-w-[680px] mx-auto mb-10">
                 <h1 className="text-[#2DB1A3] text-4xl font-sans">Popular Services</h1>
-                <h2 className="title">Services We Provide</h2>
+                <h2 className="mt-2 mb-20  text-xl">Services We Provide</h2>
               </div>
             </div>
           </div>
 
-          <div className="feature-h2-wrap bg-[#F6F2ED] mx-[-80px] px-[80px] py-[70px]">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-[-70px] mb-[40px]">
+          <div className="feature-h2-wrap bg-[#F6F2ED] mx-[-80px] px-[80px] py-[70px] ">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-[-85px] mb-[40px]">
               {servicesData.map((item, index) => (
                 <div
-                  className="bg-white p-3 w-[290px] h-[300px] relative overflow-hidden group hover:text-white"
+                  className={`bg-[#ffffffa7] p-3 w-[290px] h-[300px] relative overflow-hidden group hover:text-white ${index < 4 ? 'mt-[-30px]' : ''
+                    }`}
                   key={index}
                 >
                   {/* Background hover overlay */}
@@ -90,7 +51,7 @@ const ServiceFeature = () => {
                         <span className="text-[2.5rem] font-bold text-black group-hover:text-black">{item.number}</span>
                         <div className="icons align-center mt-[2rem] ml-[60px]">{item.icon}</div>
                       </div>
-                      <h3 className="title text-[2rem] text-black group-hover:text-white">{item.title}</h3>
+                      <h3 className="title font-bold text-[1.5rem] text-black group-hover:text-white">{item.title}</h3>
                     </div>
 
                     {/* Description positioned near the bottom */}
@@ -103,6 +64,7 @@ const ServiceFeature = () => {
                 </div>
               ))}
             </div>
+
 
             <div className="feature-cta-wrap flex flex-col items-center">
               {/* Title */}

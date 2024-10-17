@@ -117,7 +117,7 @@ const ContactUs = () => {
                           <input
                             type={placeholder === 'Your Email' ? 'email' : placeholder === 'Phone Number' ? 'tel' : 'text'}
                             placeholder={placeholder}
-                            className="form-control style-border w-full"
+                            className="form-control border border-solid border-slate-400 rounded-md p-3 w-full"
                             required
                           />
                         </div>
@@ -126,7 +126,7 @@ const ContactUs = () => {
                         <input
                           type="text"
                           placeholder="Subject"
-                          className="form-control style-border w-full"
+                          className="form-control border border-solid border-slate-300 rounded-md p-3 w-full"
                           list="subject-options"
                           required
                         />
@@ -139,12 +139,12 @@ const ContactUs = () => {
                       <div className="form-group col-span-2">
                         <textarea
                           placeholder="Message here.."
-                          className="form-control style-border w-full h-32"
+                          className="form-control border border-solid border-slate-400 rounded-md p-3 w-full h-32"
                           required
                         />
                       </div>
                       <div className="form-group col-span-2 mb-0">
-                        <button className="global-btn w-full py-3 bg-[#e3364d] text-white rounded-lg hover:bg-[#db6473]">
+                        <button className="global-btn w-full py-3 bg-[#2DB1A3] text-white rounded-lg hover:bg-[#3be7d6]">
                           Send Now
                           <img
                             src="assets/img/icon/right-icon.svg"

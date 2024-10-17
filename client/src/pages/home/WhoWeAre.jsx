@@ -34,7 +34,7 @@ const WhoWeAre = () => {
                 data-aos-duration="800"
                 data-aos-once="true"
               >
-                <span className="text-lg text-main font-semibold mb-4 inline-block text-[#e3364d]">
+                <span className="text-lg text-main font-semibold mb-4 inline-block text-[#2DB1A3]">
                   WHO WE ARE
                 </span>
                 <h3 className="text-4xl mb-4 leading-snug relative">

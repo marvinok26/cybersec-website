@@ -1,8 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
-import './main-styles.css'
-
 import services1 from './images/services/services-1.jpg';
 import services2 from './images/services/services-2.jpg';
 import services3 from './images/services/services-3.jpg';
@@ -12,58 +9,67 @@ import servicesShape2 from './images/services/services-shape-2.png';
 
 const ServicesCard = () => {
   return (
-    <div className="services-area bg-black pt-24 pb-24 relative"> {/* Ensure this div is relative */}
-      <div className="container mx-auto">
-        <div className="section-title text-center mb-10">
-          <span className="text-main-color font-semibold">OUR SOLUTIONS & SERVICES</span>
-          <h2 className="text-white">
-            We Provide the Best Quality <b>Services</b>
+    <section className="services-area bg-[#2f2f2f] pt-8 pb-24 relative overflow-hidden">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-10">
+          <span className="text-[#2DB1A3] font-semibold text-lg block mb-3">OUR SOLUTIONS & SERVICES</span>
+          <h2 className="text-white text-3xl font-bold">
+            We Provide  
+            <b className="text-[#c21b31]"> Quality Services </b>
           </h2>
-          <p className="text-[#cdc4d9]">
-            We are a technology solutions providing company all over the world
-            for over 40 years. Lorem ipsum dolor sit amet.
+          <p className="text-[#cdc4d9] mt-3 max-w-[600px] mx-auto">
+            We are dedicated to staying ahead of the curve, ensuring that your business is protected against emerging threats and fully equipped to thrive in the digital landscape.
           </p>
         </div>
 
-        <div className="flex flex-wrap justify-center">
+        {/* Services Cards */}
+        <div className="flex flex-wrap justify-center gap-4">
           {[
             {
               img: services1,
               title: "Cybersecurity",
-              desc: "Pen-testing, email security, SOC, SIEM, SOAR, Cyber threat intelligence, Data loss prevention…",
+              desc: "Pen-testing, email security, SOC, SIEM, SOAR, Cyber threat intelligence, Data loss prevention...",
             },
             {
               img: services2,
               title: "Cloud Solutions",
-              desc: "Azure & AWS expertise, Architecture review, Cost mgt & optimization, Disaster recovery, Backup & Storage, BCP & SRT",
+              desc: "Azure & AWS expertise, Architecture review, Cost mgt & optimization, Disaster recovery, Backup & Storage, BCP & SRT...",
             },
             {
               img: services3,
               title: "Office Automation",
-              desc: "MS 365 & Office Optimization, Email migration, Power Apps & MS Copilot, Sharepoint, Training & Support…",
+              desc: "MS 365 & Office Optimization, Email migration, Power Apps & MS Copilot, Sharepoint, Training & Support...",
             },
             {
               img: services4,
               title: "Datacenter & Networking",
-              desc: "Datacenter design & mgt, End to end datacenter solutions, Server & Storage solutions, Networking solutions…",
+              desc: "Datacenter design & mgt, End to end datacenter solutions, Server & Storage solutions, Networking solutions...",
             },
           ].map((service, index) => (
             <div key={index} className="lg:w-1/4 md:w-1/2 p-4">
-              <div className="services-item bg-[#2e2141] rounded-lg p-4 mb-6 transition-transform duration-300">
+              <div className="services-item bg-[#2e2141] rounded-lg p-6 mb-6 transition-transform duration-300 hover:scale-105 h-[440px]">
                 <div className="services-image overflow-hidden rounded-lg">
-                  <Link to="/services/details">
-                    <img src={service.img} alt={service.title} className="transition-transform duration-300" />
+                  <Link to="/services">
+                    <img 
+                      src={service.img} 
+                      alt={service.title} 
+                      className="w-full h-auto object-cover transition-transform duration-300 hover:scale-110" 
+                    />
                   </Link>
                 </div>
                 <div className="services-content p-6">
                   <h3 className="text-lg font-bold mb-4">
-                    <Link to="/services/details" className="text-white">
+                    <Link to="/services" className="text-white hover:text-[#e3364d] transition-colors">
                       {service.title}
                     </Link>
                   </h3>
-                  <p className="text-[#cdc4d9] mb-0">{service.desc}</p>
-                  <Link to="/services/details" className="services-btn mt-4 inline-block text-main-color font-bold">
+                  <p className="text-[#cdc4d9]">{service.desc}</p>
+                  <Link 
+                    to="/services" 
+                    className="services-btn mt-4 inline-block bg-gradient-to-r from-[#e3364d] to-[#c21b31] text-transparent bg-clip-text font-bold hover:pl-6 transition-all relative"
+                  >
                     View More
+                    <span className="absolute left-0 top-1/2 transform -translate-y-1/2 w-4 h-0.5 bg-gradient-to-r from-[#e3364d] to-[#c21b31] opacity-0 transition-all duration-500"></span>
                   </Link>
                 </div>
               </div>
@@ -71,21 +77,25 @@ const ServicesCard = () => {
           ))}
         </div>
 
+        {/* Explore All Services Button */}
         <div className="services-all-btn text-center mt-6">
-          <Link to="/services/services" className="default-btn">
+          <Link 
+            to="/services" 
+            className="default-btn bg-[#2DB1A3] text-white rounded-md p-3 hover:bg-[#33dac9] transition-colors duration-300"
+          >
             Explore All Services
           </Link>
         </div>
       </div>
 
-      {/* Shape Images with Effects */}
-      <div className="absolute top-20 left-5 animate-moveleftbounce"> {/* Ensure animations are applied */}
-        <img src={servicesShape1} alt="shape" width={230} height={272} />
+      {/* Decorative Shapes */}
+      <div className="absolute top-20 left-5 animate-bounce">
+        <img src={servicesShape1} alt="Decorative shape" width={230} height={272} />
       </div>
-      <div className="absolute top-10 right-5 animate-rotateme">
-        <img src={servicesShape2} alt="shape" width={140} height={125} />
+      <div className="absolute top-10 right-5 animate-spin-slow">
+        <img src={servicesShape2} alt="Decorative shape" width={140} height={125} />
       </div>
-    </div>
+    </section>
   );
 };
 

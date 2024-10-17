@@ -67,9 +67,9 @@ const About = () => {
   ];
 
   return (
-    <div className="relative mt-28">
+    <div className="relative mt-[5rem]">
       {/* Main About Us Section */}
-      <div className="bg-[#1c1c1c] m-auto">
+      <div className="bg-[#1c1c1c] m-auto mt-">
         {/* Title */}
         <h1 className="text-[2.5rem] font-extrabold mb-6 w-[600px] max-w-3xl text-white">
           We specialize in delivering <span className='text-[#e3364d]'>Comprehensive</span> IT integration, Cybersecurity, and Cloud solutions.

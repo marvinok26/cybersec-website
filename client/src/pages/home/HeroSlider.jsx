@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import './main-styles.css';
+import './main-styles.css'; // Ensure necessary custom keyframes are here
 
 // Import images
 import heroBg1 from './images/main-hero/hero-bg-1.jpg';
@@ -10,7 +10,6 @@ import shape1 from './images/main-hero/slides-shape-1.png';
 import shape2 from './images/main-hero/slides-shape-2.png';
 import shape3 from './images/main-hero/slides-shape-3.png';
 
-// Slide data
 const slides = [
   {
     id: 1,
@@ -26,7 +25,7 @@ const slides = [
     bgImage: heroBg2,
     subtitle: "WE UNDERSTAND THE CHALLENGES FACED BY MODERN ENTERPRISES",
     title: "We provide customized solutions for your business operations",
-    description: "Whether it’s building resilient Security Operation Centers (SOCs), migrating your infrastructure to the cloud, or designing and managing state- of-the-art datacenters, Alamat Group Limited is your trusted partner for success",
+    description: "Whether it’s building resilient Security Operation Centers (SOCs), migrating your infrastructure to the cloud, or designing and managing state-of-the-art datacenters, Alamat Group Limited is your trusted partner for success.",
     buttonText: "Get Started",
     buttonLink: "/contact"
   },
@@ -35,7 +34,7 @@ const slides = [
     bgImage: heroBg3,
     subtitle: "WE ARE DRIVEN BY INNOVATION & EXCELLENCE",
     title: "Leveraging industry-leading technologies from top vendors like Microsoft and more",
-    description: "We are committed to helping you navigate the complexities of today’s IT landscape, ensuring that your organization is equipped to thrive in the digital age",
+    description: "We are committed to helping you navigate the complexities of today’s IT landscape, ensuring that your organization is equipped to thrive in the digital age.",
     buttonText: "Get Started",
     buttonLink: "/contact"
   }
@@ -52,7 +51,7 @@ const HeroSlider = () => {
   }, []);
 
   return (
-    <div className="relative overflow-hidden h-[600px] mt-[5rem]">
+    <div className="relative overflow-hidden h-[600px] md:h-[800px] mt-[5rem]">
       {slides.map((slide, index) => (
         <div
           key={slide.id}
@@ -62,20 +61,38 @@ const HeroSlider = () => {
         >
           <img
             src={slide.bgImage}
-            alt={`Hero Background ${slide.id}`}
-            className="object-cover w-full h-full"
+            alt={`Technology Solutions Slide ${slide.id}`}
+            className="object-cover w-full h-full animate-paper-plane"
           />
-          <div className="absolute inset-0 bg-black opacity-40 "></div>
-          <div className="absolute inset-0 flex items-center justify-start w-[800px] px-10 mt-[12rem]">
-            <div className="text-white max-w-4xl space-y-6 z-20">
-              <span className="block text-xl font-semibold text-[#e3364d]">
-                {slide.subtitle}
+          <div className="absolute inset-0 bg-black opacity-40"></div>
+          <div className="absolute inset-0 flex items-center justify-start px-4 sm:px-10 mt-[10rem] md:mt-[15rem]">
+            <div className="text-white max-w-full sm:max-w-2xl lg:max-w-4xl space-y-6 z-20">
+              <span className="block text-lg sm:text-xl font-semibold text-[#2DB1A3]">
+                {slide.subtitle.split('').map((letter, i) => (
+                  <span
+                    key={i}
+                    className="inline-block opacity-0 animate-slide-in"
+                    style={{ animationDelay: `${i * 0.03}s` }}
+                  >
+                    {letter}
+                  </span>
+                ))}
               </span>
-              <h1 className="text-5xl font-bold text-white">{slide.title}</h1>
-              <p className="text-lg text-gray-300">{slide.description}</p>
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-snug">
+                {slide.title.split('').map((letter, i) => (
+                  <span
+                    key={i}
+                    className="inline-block opacity-0 animate-slide-in"
+                    style={{ animationDelay: `${i * 0.03}s` }}
+                  >
+                    {letter}
+                  </span>
+                ))}
+              </h1>
+              <p className="text-sm sm:text-lg text-gray-300">{slide.description}</p>
               <Link
                 to={slide.buttonLink}
-                className="inline-block bg-[#e3364d] text-white py-3 px-6 rounded-lg hover:bg-[#e65369]"
+                className="inline-block bg-[#2DB1A3] text-white py-2 sm:py-3 px-4 sm:px-6 rounded-lg hover:bg-[#3fd7c8] transition-all"
               >
                 {slide.buttonText}
               </Link>
@@ -84,15 +101,15 @@ const HeroSlider = () => {
         </div>
       ))}
 
-      {/* Shape Images (With higher z-index to ensure they are always on top) */}
-      <div className="absolute top-16 left-8 animate-rotate z-30">
-        <img src={shape1} alt="Decorative Shape 1" className="w-36 h-36" />
+      {/* Shape Images */}
+      <div className="absolute top-8 sm:top-16 left-8 z-30 animate-paper-plane">
+        <img src={shape1} alt="Decorative Shape 1" className="w-16 h-16 sm:w-36 sm:h-36" />
       </div>
-      <div className="absolute top-[16%] left-1/2 transform -translate-x-1/2 animate-bounce z-30">
-        <img src={shape2} alt="Decorative Shape 2" className="w-44 h-48" />
+      <div className="absolute top-[10%] sm:top-[16%] left-1/2 transform -translate-x-1/2 z-30 animate-paper-plane">
+        <img src={shape2} alt="Decorative Shape 2" className="w-24 h-24 sm:w-44 sm:h-48" />
       </div>
-      <div className="absolute bottom-10 left-1/4 transform -translate-x-1/4 animate-bounce z-30">
-        <img src={shape3} alt="Decorative Shape 3" className="w-12 h-12" />
+      <div className="absolute bottom-10 left-1/4 transform -translate-x-1/4 z-30 animate-paper-plane">
+        <img src={shape3} alt="Decorative Shape 3" className="w-8 h-8 sm:w-12 sm:h-12" />
       </div>
     </div>
   );

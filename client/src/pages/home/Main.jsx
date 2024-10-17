@@ -4,8 +4,6 @@ import WhoWeAre from "./WhoWeAre";
 import WhyChooseUs from "./WhyChooseUs";
 import ServicesCard from "./ServicesCard";
 
-import './styles.scss'
-
 
 
 export default function Page() {

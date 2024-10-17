@@ -1,94 +1,94 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useState } from 'react';
 
 // Import images
 import osH32 from '../home/images/services/services-2.jpg';
 
-const Accordion = () => {
-  const [activeIndex, setActiveIndex] = useState(null); // Track the active accordion
+// Import React Icons
+import { FaShieldAlt, FaCloudUploadAlt, FaUsersCog, FaNetworkWired } from 'react-icons/fa';
 
-  // Array of accordion items
+const Accordion = () => {
+  const [activeIndex, setActiveIndex] = useState(null);
+
+  // Accordion items array
   const accordionItems = [
     {
       id: 1,
-      title: 'Network Security & Protection',
-      content: 'Accelerate innovation with world-class tech teams. We’ll match you to an entire remote team.',
+      title: 'Cybersecurity Solutions',
+      icon: <FaShieldAlt className="text-white text-[30px] mb-2" />,
+      content: 'Our comprehensive cybersecurity strategies include vulnerability assessments, email security, and 24/7 monitoring to protect your organization from evolving threats.',
     },
     {
       id: 2,
-      title: 'Browser Safety & Farewell',
-      content: 'Ensure the safety of browsing with world-class security teams. We’ll match you to remote teams.',
+      title: 'Cloud Solutions',
+      icon: <FaCloudUploadAlt className="text-white text-[30px] mb-2" />,
+      content: 'We specialize in Azure and AWS services, offering migration solutions, disaster recovery, and cloud optimization strategies to ensure your cloud infrastructure is robust and scalable.',
     },
     {
       id: 3,
-      title: 'Infrastructure Technology',
-      content: 'Build robust infrastructure with remote teams. We’ll match you to expert engineers.',
+      title: 'Office Automation & Collaboration',
+      icon: <FaUsersCog className="text-white text-[30px] mb-2" />,
+      content: 'Maximize productivity with our Microsoft 365 optimization, email migration services, and enhanced collaboration tools like Microsoft Teams and SharePoint.',
     },
     {
       id: 4,
-      title: 'Management & Support Services',
-      content: 'Get management and support services from world-class tech teams. We’ll match you with the best.',
+      title: 'Datacenter & Networking Solutions',
+      icon: <FaNetworkWired className="text-white text-[30px] mb-2" />,
+      content: 'Our end-to-end datacenter solutions ensure your infrastructure is efficient, with high-performance servers, storage solutions, and a resilient network design.',
     },
   ];
 
-  // Function to toggle accordion
   const toggleAccordion = (index) => {
-    setActiveIndex(activeIndex === index ? null : index); // Toggle between open and close
+    setActiveIndex(activeIndex === index ? null : index);
   };
 
   return (
-    <div >
-      {/* Why Choose Us */}
-      <section className="pb-[1rem] wcus-home3 bb-blog">
-        <div className="container mx-auto">
-          <div className="flex flex-wrap">
+    <div>
+      {/* Why Choose Us Section */}
+      <section className="pb-8 wcus-home3 bb-blog">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-wrap lg:flex-nowrap">
+            {/* Left Column */}
             <div className="lg:w-1/2">
-              <div className="relative mr-[60px]">
-                <div className="flex gap-[30px] items-start">
-                  <img src={osH32} alt="image" className="wcus-pt w-[90%] h-[400px] object-cover mt-[80px]" />
-                  <img src={osH32} alt="image" className="mt-[2rem] absolute ml-[25rem] w-[30%] h-auto object-cover" />
+              <div className="relative mr-6">
+                <div className="flex gap-6 items-start">
+                  <img src={osH32} alt="IT Services Overview" className="wcus-pt w-full lg:w-9/12 h-[300px] lg:h-[400px] object-cover mt-8" />
+                  <img src={osH32} alt="Office Space" className="hidden lg:block absolute ml-64 w-1/3 h-auto object-cover" />
                 </div>
-                <div className="absolute bg-[#2DB1A3] text-white p-[18px] max-w-[335px] w-full left-[43%] bottom-[2%] flex">
-                  <div className="icon text-[50px] mr-[25px] mt-[7px]">
-                    <i className="icon-medals-gif"></i>
+                <div className="absolute bg-[#2DB1A3] text-white p-4 max-w-md w-full left-1/2 lg:left-[43%] bottom-[5%] flex transform -translate-x-1/2">
+                  <div className="icon text-[50px] mr-6">
+                    <FaShieldAlt className="text-white" />
                   </div>
                   <div className="content">
-                    <h5 className="mb-[7px]">Certified Company</h5>
-                    <p className="text-[13px] leading-[20px] text-white font-normal">Accelerate innovation with world match entire remote team</p>
+                    <h5 className="mb-2 text-black font-semibold">Certified Company</h5>
+                    <p className="text-sm leading-5">Delivering innovative IT solutions for your business.</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="lg:w-1/2 mt-[20px]">
-              <div className="heading-title mb-[40px]">
-                <span className="sub-title text-[#2DB1A3] font-man text-2xl">Why Choose Us</span>
-                <h2 className="text-4xl font-bold my-3">
-                  Innovative Strategies for Maximum <span className="text-[#e3364d] text-2xl">SEO Impact</span>
+
+            {/* Right Column */}
+            <div className="lg:w-1/2 mt-8 lg:mt-0">
+              <div className="heading-title mb-10">
+                <h2 className="text-4xl font-bold leading-snug">
+                  Innovative Strategies for Maximum <span className="text-[#e3364d]">Business Impact</span>
                 </h2>
-                <p className="des">We are at the forefront of technological innovation, dedicated to providing comprehensive IT solutions that empower businesses</p>
+                <p className="text-lg mt-4">At Alamat Group Limited, we empower businesses with comprehensive IT solutions, tailored to meet the unique challenges of today's digital landscape.</p>
               </div>
-              <div className="flex flex-wrap">
-                <div className="w-1/2">
-                  <div className="icon-box-wcusz">
-                    <div className="icon text-[#e3364d] text-[50px] mb-[23px]">
-                      <i className="icon-icon-dev"></i>
-                    </div>
-                    <div className='bg-[#2DB1A3] mr-3 px-2 hover:bg-[#55f7e7]'>
-                      <h4 className="text-[20px] font-semibold mb-[13px]">Robotics software</h4>
-                      <p className="des">We are a dynamic and forward dedicated revolution</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="w-1/2">
-                  <div className="icon-box-wcus">
-                    <div className="icon text-[#e3364d] text-[50px] mb-[23px]">
-                      <i className="icon-artificial-intelligence"></i>
-                    </div>
-                    <div className='bg-[#2DB1A3] px-2 hover:bg-[#55f7e7]'>
-                      <h4 className="text-[20px] font-semibold mb-[13px]">Smart AI & chatbots</h4>
-                      <p className="des">Passion lies creating solution not only meet but exceed</p>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {accordionItems.map((item, index) => (
+                  <div className="cursor-pointer" key={item.id} onClick={() => toggleAccordion(index)}>
+                    <div className="flex flex-col items-start bg-[#2DB1A3] p-4 hover:bg-[#4ccdc0] transition-all duration-300 ease-in-out rounded-md">
+                      <div className="icon mb-2">
+                        {item.icon}
+                      </div>
+                      <h4 className="text-lg font-semibold text-black mb-2">{item.title}</h4>
+                      {activeIndex === index && (
+                        <p className="text-white text-sm">{item.content}</p>
+                      )}
                     </div>
                   </div>
-                </div>
+                ))}
               </div>
             </div>
           </div>
