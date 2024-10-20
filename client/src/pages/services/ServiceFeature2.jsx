@@ -93,7 +93,9 @@ const ServiceFeature2 = () => {
                 <article className="accordion-item" key={item.id}>
                   <h5 className="accordion-header">
                     <button
-                      className={`accordion-button ${activeIndex === item.id ? '' : 'collapsed'} text-white border border-slate-600 rounded-md p-2.5 hover:bg-[#2DB1A3] transition-all duration-300`}
+                      className={`accordion-button ${
+                        activeIndex === item.id ? 'bg-[#2DB1A3]' : 'collapsed'
+                      } text-white border border-slate-600 rounded-md p-2.5 hover:bg-[#2DB1A3] transition-all duration-300`}
                       type="button"
                       onClick={() => toggleAccordion(item.id)}
                       aria-expanded={activeIndex === item.id}
