@@ -8,6 +8,9 @@ import {
   FaTwitter,
   FaInstagram,
 } from 'react-icons/fa';
+
+import { SiMediamarkt, SiGooglemarketingplatform } from "react-icons/si";
+
 import { Link } from 'react-router-dom';
 
 const ContactUs = () => {
@@ -44,7 +47,7 @@ const ContactUs = () => {
   return (
     <>
       {/* Map Section */}
-      <section className="map-sec mt-[5rem]">
+      <section className="map-sec mt-5">
         <iframe
           className="w-full h-[200px] md:h-[400px]"
           frameBorder="0"
@@ -85,7 +88,7 @@ const ContactUs = () => {
                 <div className="lg:w-1/3">
                   <div className="title-area mb-6">
                     <span className="sub-title flex items-center text-[1rem] text-[#e3364d]">
-                      <img src="assets/img/icon/title_left.svg" alt="Contact Us Icon" className="mr-2" />
+                      <SiMediamarkt className="mr-2" />
                       Contact Us
                     </span>
                     <h2 className="sec-title style2 text-4xl my-3">Get In Touch</h2>
@@ -147,6 +150,9 @@ const ContactUs = () => {
                       <div className="form-group col-span-2 mb-0">
                         <button className="global-btn w-full py-3 bg-[#2DB1A3] text-white rounded-lg hover:bg-[#3be7d6]">
                           Send Now
+                          <SiGooglemarketingplatform
+                            className="inline ml-2"
+                          />
                         </button>
                       </div>
                     </div>
