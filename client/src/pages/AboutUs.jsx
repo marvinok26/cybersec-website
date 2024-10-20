@@ -37,11 +37,11 @@ const About = () => {
   }, []);
 
   const images = [
-    { src: image1, alt: 'Description 1', marginTop: '2rem' },
-    { src: image2, alt: 'Description 2', marginTop: '7rem' },
-    { src: image3, alt: 'Description 3', marginTop: '5rem' },
-    { src: image4, alt: 'Description 4', marginTop: '1rem' },
-    { src: image5, alt: 'Description 5', marginTop: '6rem' },
+    { src: image1, alt: 'cyber security', marginTop: '2rem' },
+    { src: image2, alt: 'cyber security', marginTop: '7rem' },
+    { src: image3, alt: 'cybersecurity revenue boodt', marginTop: '5rem' },
+    { src: image4, alt: 'on point protection', marginTop: '1rem' },
+    { src: image5, alt: 'networking', marginTop: '2rem' },
   ];
 
   const listItems = [
@@ -104,7 +104,7 @@ const About = () => {
                   </li>
                 ))}
               </ul>
-              <a href="#" className="inline-block bg-[#e3364d] text-white px-6 py-2 rounded hover:bg-[#d35364]">
+              <a href="#" className="inline-block bg-[#2DB1A3] text-white px-6 py-2 rounded hover:bg-[#31d2c2]">
                 Read More
               </a>
             </div>
