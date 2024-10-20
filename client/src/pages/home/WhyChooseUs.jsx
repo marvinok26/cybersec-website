@@ -1,11 +1,5 @@
-import React, { useState, useEffect } from "react";
-import chooseImage1 from './images/choose/choose-1.png';
-import chooseImage2 from './images/choose/choose-2.png';
-import chooseImage3 from './images/choose/choose-3.png';
-import chooseImage4 from './images/choose/choose-4.png';
-import chooseShape1 from './images/choose/choose-shape.png';
-import chooseShape2 from './images/choose/choose-shape-2.png';
-import PartnerCarousel from "./PartnerCarousel";
+import React from "react";
+
 
 
 
@@ -24,17 +18,8 @@ const WhyChooseUs = () => {
 
         
       </div>
-      {/* Partner Carousel */}
-      <PartnerCarousel className=" w-full"/>
+      
 
-
-      {/* Shape Images */}
-      <div className="absolute left-0 right-0 mx-auto bottom-12 z-0">
-        <img src={chooseShape1} alt="shape" className="w-full" />
-      </div>
-      <div className="absolute left-0 right-0 mx-auto -top-[300px] z-0">
-        <img src={chooseShape2} alt="shape" className="w-full" />
-      </div>
     </div>
   );
 };

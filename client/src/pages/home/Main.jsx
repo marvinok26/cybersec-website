@@ -3,6 +3,7 @@ import HeroSlider from "./HeroSlider";
 import WhoWeAre from "./WhoWeAre";
 import WhyChooseUs from "./WhyChooseUs";
 import ServicesCard from "./ServicesCard";
+import PartnerCarousel from "./PartnerCarousel";
 
 
 
@@ -15,11 +16,15 @@ export default function Page() {
 
       <WhoWeAre />
 
-      <ServicesCard />
-
       <div className="bg-with-F5F5F5-color">
         <WhyChooseUs />
+        {/* Partner Carousel */}
+      <PartnerCarousel className=" w-full"/>
       </div>
+
+      <ServicesCard />
+
+      
 
     </>
   )

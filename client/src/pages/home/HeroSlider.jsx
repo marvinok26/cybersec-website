@@ -1,14 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import './main-styles.css'; // Ensure necessary custom keyframes are here
+import './main-styles.css'; 
 
 // Import images
 import heroBg1 from './images/main-hero/hero-bg-1.jpg';
 import heroBg2 from './images/main-hero/hero-bg-2.jpg';
 import heroBg3 from './images/main-hero/hero-bg-3.jpg';
-import shape1 from './images/main-hero/slides-shape-1.png';
-import shape2 from './images/main-hero/slides-shape-2.png';
-import shape3 from './images/main-hero/slides-shape-3.png';
 
 const slides = [
   {
@@ -51,7 +48,7 @@ const HeroSlider = () => {
   }, []);
 
   return (
-    <div className="relative overflow-hidden h-[600px] md:h-[800px]">
+    <div className="mt-[5rem] relative overflow-hidden h-[600px] md:h-[100vh]">
       {slides.map((slide, index) => (
         <div
           key={slide.id}
@@ -65,7 +62,7 @@ const HeroSlider = () => {
             className="object-cover w-full h-full"
           />
           <div className="absolute inset-0 bg-black opacity-40"></div>
-          <div className="absolute inset-0 flex items-center justify-start px-4 sm:px-10 mt-[10rem] md:mt-[10rem]">
+          <div className="absolute inset-0 flex items-center justify-start px-4 sm:px-10  ">
             <div className="text-white w-[750px] space-y-6 z-20">
               <span className="block text-lg sm:text-xl font-semibold text-[#2DB1A3]">
                 {slide.subtitle.split(' ').map((word, i) => (
@@ -100,17 +97,6 @@ const HeroSlider = () => {
           </div>
         </div>
       ))}
-
-      {/* Shape Images */}
-      <div className="absolute top-8 sm:top-16 left-8 z-30 animate-paper-plane">
-        <img src={shape1} alt="Decorative Shape 1" className="w-16 h-16 sm:w-36 sm:h-36" />
-      </div>
-      <div className="absolute top-[10%] sm:top-[16%] left-1/2 transform -translate-x-1/2 z-30 animate-paper-plane">
-        <img src={shape2} alt="Decorative Shape 2" className="w-24 h-24 sm:w-44 sm:h-48" />
-      </div>
-      <div className="absolute bottom-10 left-1/4 transform -translate-x-1/4 z-30 animate-paper-plane">
-        <img src={shape3} alt="Decorative Shape 3" className="w-8 h-8 sm:w-12 sm:h-12" />
-      </div>
     </div>
   );
 };

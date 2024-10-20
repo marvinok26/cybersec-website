@@ -1,8 +1,18 @@
 import React from "react";
+import aboutShape from './images/about/about-shape.png';
 
 const PartnerCarousel = () => {
   return (
-    <section className="bg-white dark:bg-gray-100" aria-labelledby="partner-carousel-title">
+    <section
+      className="bg-white dark:bg-gray-100 relative"
+      aria-labelledby="partner-carousel-title"
+      style={{
+        backgroundImage: `url(${aboutShape})`,
+        backgroundPosition: 'center bottom',
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+      }}
+    >
       <div className="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
         <h2
           id="partner-carousel-title"

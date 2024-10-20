@@ -1,18 +1,26 @@
 import React from 'react';
 import { FaTwitter, FaFacebookF, FaInstagram, FaGithub } from 'react-icons/fa';
 import logo1 from '../images/logo1.jpeg';
+import aboutShape from '../pages/home/images/about/about-shape.png';
 
-const Footer = () => {        
+const Footer = () => {
     return (
-        <footer className="py-6 bg-gray-50 sm:py-12 lg:py-16">
-            <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+        <footer 
+            className="py-6 bg-gray-50 sm:py-12 lg:py-16 relative bg-no-repeat bg-cover"
+            style={{
+                backgroundImage: `url(${aboutShape})`,
+                backgroundPosition: 'bottom center',
+                backgroundSize: 'cover',
+            }}
+        >
+            <div className="relative z-10 px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-y-10 gap-x-8">
                     {/* Logo and Description */}
                     <div className="col-span-2 md:col-span-3 lg:col-span-2 lg:pr-8">
                         <img className="w-auto h-11 lazyload" src={logo1} alt="Alamat Group Limited Logo, your trusted technology partner" loading="lazy" />
 
                         <p className="mt-5 text-base leading-relaxed text-gray-600">
-                            At Alamat Group Limited, we provides innovative IT solutions, specializing in cloud services, cybersecurity, and business automation. Dedicated to enhancing business performance.
+                            At Alamat Group Limited, we provide innovative IT solutions, specializing in cloud services, cybersecurity, and business automation. Dedicated to enhancing business performance.
                         </p>
 
                         {/* Social Links */}

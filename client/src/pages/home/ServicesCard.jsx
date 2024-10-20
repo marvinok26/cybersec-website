@@ -4,8 +4,6 @@ import services1 from './images/services/services-1.jpg';
 import services2 from './images/services/services-2.jpg';
 import services3 from './images/services/services-3.jpg';
 import services4 from './images/services/services-4.jpg';
-import servicesShape1 from './images/services/services-shape-1.png';
-import servicesShape2 from './images/services/services-shape-2.png';
 
 const ServicesCard = () => {
   return (

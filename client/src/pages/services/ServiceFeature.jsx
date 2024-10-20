@@ -1,5 +1,7 @@
 import React, { useRef } from 'react';
 
+import aboutShape from '../home/images/about/about-shape.png';
+
 import { FaDesktop, FaCloud, FaLock, FaNetworkWired, FaShieldAlt, FaRegChartBar, FaCode } from 'react-icons/fa';
 
 const ServiceFeature = () => {
@@ -8,19 +10,21 @@ const ServiceFeature = () => {
   // Service data
   const servicesData = [
     { number: '01', icon: <FaRegChartBar className="text-4xl text-[#2DB1A3] group-hover:text-[#e3364d]" />, title: 'Cybersecurity Solutions', description: 'We provide advanced cybersecurity services such as VAPT, email security, SOC, CTI, and more to protect your business from evolving digital threats.' },
-{ number: '02', icon: <FaCloud className="text-4xl text-[#2DB1A3] group-hover:text-[#e3364d]" />, title: 'Cloud Solutions', description: 'We offer comprehensive cloud services, including migration, cost optimization, and disaster recovery, ensuring your infrastructure is scalable and secure.' },
-{ number: '03', icon: <FaLock className="text-4xl text-[#2DB1A3] group-hover:text-[#e3364d]" />, title: 'Data Loss Prevention (DLP)', description: 'Implement robust DLP solutions to protect sensitive data across endpoint, network, and cloud environments.' },
-{ number: '04', icon: <FaNetworkWired className="text-4xl text-[#2DB1A3] group-hover:text-[#e3364d]" />, title: 'Datacenter and Networking Solutions', description: 'We design and manage state-of-the-art datacenters, ensuring robust, scalable infrastructure for your growing business needs.' },
-{ number: '05', icon: <FaShieldAlt className="text-4xl text-[#2DB1A3] group-hover:text-[#e3364d]" />, title: 'Firewall and Security Solutions', description: 'Protect your network from cyberattacks with advanced firewall solutions from top vendors like Fortinet and Sophos.' },
-{ number: '06', icon: <FaDesktop className="text-4xl text-[#2DB1A3] group-hover:text-[#e3364d]" />, title: 'Office Automation & Collaboration', description: 'Streamline your business with optimized Microsoft 365, Office 365, and enhanced collaboration tools like Microsoft Teams.' },
-{ number: '07', icon: <FaRegChartBar className="text-4xl text-[#2DB1A3] group-hover:text-[#e3364d]" />, title: 'Cyber Threat Intelligence (CTI)', description: 'Stay ahead of threats with actionable intelligence, monitoring risks from the internet, dark web, and threat feeds.' },
-{ number: '08', icon: <FaCode className="text-4xl text-[#2DB1A3] group-hover:text-[#e3364d]" />, title: 'Custom Business Solutions with Power Apps', description: 'Build tailored business applications with Power Apps, enhancing productivity and efficiency without extensive coding knowledge.' },
-
+    { number: '02', icon: <FaCloud className="text-4xl text-[#2DB1A3] group-hover:text-[#e3364d]" />, title: 'Cloud Solutions', description: 'We offer comprehensive cloud services, including migration, cost optimization, and disaster recovery, ensuring your infrastructure is scalable and secure.' },
+    { number: '03', icon: <FaLock className="text-4xl text-[#2DB1A3] group-hover:text-[#e3364d]" />, title: 'Data Loss Prevention (DLP)', description: 'Implement robust DLP solutions to protect sensitive data across endpoint, network, and cloud environments.' },
+    { number: '04', icon: <FaNetworkWired className="text-4xl text-[#2DB1A3] group-hover:text-[#e3364d]" />, title: 'Datacenter and Networking Solutions', description: 'We design and manage state-of-the-art datacenters, ensuring robust, scalable infrastructure for your growing business needs.' },
+    { number: '05', icon: <FaShieldAlt className="text-4xl text-[#2DB1A3] group-hover:text-[#e3364d]" />, title: 'Firewall and Security Solutions', description: 'Protect your network from cyberattacks with advanced firewall solutions from top vendors like Fortinet and Sophos.' },
+    { number: '06', icon: <FaDesktop className="text-4xl text-[#2DB1A3] group-hover:text-[#e3364d]" />, title: 'Office Automation & Collaboration', description: 'Streamline your business with optimized Microsoft 365, Office 365, and enhanced collaboration tools like Microsoft Teams.' },
+    { number: '07', icon: <FaRegChartBar className="text-4xl text-[#2DB1A3] group-hover:text-[#e3364d]" />, title: 'Cyber Threat Intelligence (CTI)', description: 'Stay ahead of threats with actionable intelligence, monitoring risks from the internet, dark web, and threat feeds.' },
+    { number: '08', icon: <FaCode className="text-4xl text-[#2DB1A3] group-hover:text-[#e3364d]" />, title: 'Custom Business Solutions with Power Apps', description: 'Build tailored business applications with Power Apps, enhancing productivity and efficiency without extensive coding knowledge.' },
   ];
 
 
   return (
-    <div ref={sectionRef}>
+    <div ref={sectionRef}
+    className="bg-white  relative"
+      
+      >
       {/* Feature Section */}
       <section className="feature-home2 mt-4 pb-[50px]">
         <div className="py-4 px-8 container mx-auto">
@@ -33,11 +37,19 @@ const ServiceFeature = () => {
             </div>
           </div>
 
-          <div className="feature-h2-wrap bg-[#F6F2ED] mx-[-80px] px-[80px] py-[70px] ">
+          <div className="feature-h2-wrap bg-[#F6F2ED] mx-[-80px] px-[80px] py-[70px] "
+          aria-labelledby="partner-carousel-title"
+          style={{
+            backgroundImage: `url(${aboutShape})`,
+            backgroundPosition: 'center bottom',
+            backgroundSize: 'contain',  // Ensures the image is visible
+            backgroundRepeat: 'no-repeat',
+            minHeight: '800px' // Ensures the container has enough height to display the background image
+          }}>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-[-85px] mb-[40px]">
               {servicesData.map((item, index) => (
                 <div
-                  className={`bg-[#ffffffa7] p-3 w-[290px] h-[300px] relative overflow-hidden group hover:text-white ${index < 4 ? 'mt-[-30px]' : ''
+                  className={`bg-[#ffffff] p-3 w-[290px] h-[300px] relative overflow-hidden group hover:text-white ${index < 4 ? 'mt-[-30px]' : ''
                     }`}
                   key={index}
                 >
