@@ -11,7 +11,7 @@ const Services = () => {
  
 
   return (
-    <div className='py-4 px-8 mt-[5rem]'>
+    <div className='mt-[5rem]'>
       {/* Optimize Solutions */}
       <ServiceTop />
 

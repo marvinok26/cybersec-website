@@ -44,7 +44,7 @@ const Accordion = () => {
   return (
     <div>
       {/* Why Choose Us Section */}
-      <section className="pb-8 wcus-home3 bb-blog">
+      <section className="pb-8 wcus-home3 bb-blog py-4 px-8 ">
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap lg:flex-nowrap">
             {/* Left Column */}

@@ -69,11 +69,11 @@ const ServiceTop = () => {
               </p>
               <ul className="space-y-3">
                 <li className="flex items-center">
-                  <i className="icon-Check bg-[#e3364d] text-white p-2 rounded-full mr-4"></i>
+                  <i className="icon-Check bg-[#2DB1A3] text-white p-2 rounded-full mr-4"></i>
                   <p className="text-[#1c1c1c] text-base">Professional Team Members</p>
                 </li>
                 <li className="flex items-center">
-                  <i className="icon-Check bg-[#e3364d] text-white p-2 rounded-full mr-4"></i>
+                  <i className="icon-Check bg-[#2DB1A3] text-white p-2 rounded-full mr-4"></i>
                   <p className="text-[#1c1c1c] text-base">Award-Winning IT Solutions Company</p>
                 </li>
               </ul>
@@ -82,13 +82,14 @@ const ServiceTop = () => {
         </div>
 
         {/* Image Grid */}
-        <div className="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6">
+        <div className="bg-[#2f2f2f] w-full flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6 mx-0 p-0">
+
           {[
             {
               imgSrc: osH31,
               category: 'Startup Business',
               number: '1',
-              title: 'Scaling with Confidence: Innovative Cybersecurity for Emerging Ventures',
+              title: 'Confidence: Innovative Security for Emerging Ventures',
             },
             {
               imgSrc: osH32,
@@ -104,7 +105,7 @@ const ServiceTop = () => {
             },
           ].map((item, index) => (
             <div className="w-full md:w-1/3" key={index}>
-              <div className="bg-[#2f2f2f] p-6 transition-all duration-300 ease-in-out transform hover:scale-105">
+              <div className=" p-6 transition-all duration-300 ease-in-out transform hover:scale-105">
                 <div className="overflow-hidden mb-4">
                   <img
                     src={item.imgSrc}
@@ -113,9 +114,10 @@ const ServiceTop = () => {
                     loading="lazy" // Lazy load for better performance
                   />
                 </div>
-                <div className="text-white">
-                  <span className="block text-sm mb-2 text-[#2DB1A3]">{item.category}</span>
-                  <div className="flex items-center">
+                {/* Fixed content height */}
+                <div className="text-white flex flex-col justify-between">
+                  <span className=" text-sm  text-[#2DB1A3]">{item.category}</span>
+                  <div className="flex items-center mb-2">
                     <span className="text-3xl font-bold mr-4 text-[#e3364d]">{item.number}</span>
                     <h3 className="text-xl">{item.title}</h3>
                   </div>

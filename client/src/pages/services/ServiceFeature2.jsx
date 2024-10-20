@@ -77,13 +77,13 @@ const ServiceFeature2 = () => {
   }, [isInView]);
 
   return (
-    <section className="pb-12 feature-home3" ref={sectionRef}>
-      <div className="container mx-auto">
+    <section className="bg-[#2f2f2f] p-12 feature-home3 mb-4" ref={sectionRef}>
+      <div className="py-4 container mx-auto">
         <div className="flex flex-col lg:flex-row">
           <div className="w-full lg:w-1/2">
             <header className="mb-5">
               <h2 className="text-[#2DB1A3] text-2xl">Cyber Security Solutions</h2>
-              <h1 className="text-4xl font-bold mt-2">
+              <h1 className="text-4xl text-white font-bold mt-2">
                 Highly Tailored IT Design, Management & Support 
                 <span className="text-[#e3364d]"> Services</span>
               </h1>
@@ -93,7 +93,7 @@ const ServiceFeature2 = () => {
                 <article className="accordion-item" key={item.id}>
                   <h5 className="accordion-header">
                     <button
-                      className={`accordion-button ${activeIndex === item.id ? '' : 'collapsed'} text-black border border-slate-600 rounded-md p-2.5 hover:bg-[#F6F2ED] transition-all duration-300`}
+                      className={`accordion-button ${activeIndex === item.id ? '' : 'collapsed'} text-white border border-slate-600 rounded-md p-2.5 hover:bg-[#2DB1A3] transition-all duration-300`}
                       type="button"
                       onClick={() => toggleAccordion(item.id)}
                       aria-expanded={activeIndex === item.id}
@@ -106,7 +106,7 @@ const ServiceFeature2 = () => {
                     aria-hidden={activeIndex !== item.id}
                   >
                     {activeIndex === item.id && (
-                      <div className="mb-2 border border-slate-400 p-4 bg-[#F6F2ED]">
+                      <div className="mb-2 border border-slate-400 p-4 bg-[#F6F2ED] w-[485px]">
                         {item.content}
                       </div>
                     )}
@@ -120,12 +120,12 @@ const ServiceFeature2 = () => {
             <img
               src={osH31}
               alt="Cyber Security Solutions"
-              className="h-auto max-w-full object-cover ml-4"
+              className="h-[417px] max-w-full object-cover ml-4"
               loading="lazy" // Lazy loading for better performance
             />
 
             <div className="bg-[#2DB1A3] absolute left-[-10%] bottom-[4.8%] p-10">
-              <div className="flex flex-col space-y-10">
+              <div className="flex flex-col h-[220px] space-y-10">
                 <div className="flex items-center space-x-6 border-b border-white pb-4">
                   <FaChartLine className="text-3xl text-white" />
                   <div>

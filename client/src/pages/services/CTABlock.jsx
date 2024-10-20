@@ -31,8 +31,8 @@ const CTABlock = () => {
   return (
     <div ref={sectionRef}>
       {/* CTA Section */}
-      <section className="py-[80px] bg-white service-cta">
-        <div className="tf-container mx-auto px-4">
+      <section className="bg-[#2f2f2f] pt-8 pb-24 relative overflow-hidden">
+        <div className="py-4 px-12 tf-container mx-auto ">
           <div className="flex flex-wrap items-center">
             
             {/* Text Section */}
@@ -41,15 +41,15 @@ const CTABlock = () => {
                 <span className="sub-title text-[#2DB1A3] font-manrope text-lg">
                   Get Expert Consultations
                 </span>
-                <h2 className="title text-2xl md:text-3xl font-bold mb-6 text-[#333]">
+                <h2 className="title text-2xl md:text-3xl font-bold mb-6 text-white">
                   Elevate Your Business with Cutting-Edge IT Solutions.
                 </h2>
-                <p className="text-[#666] mb-4">
+                <p className="text-gray-200 mb-4">
                   Our 25 years of experience have enabled us to deliver smart, scalable, and secure IT services for businesses. Partner with us for seamless IT transformations, enhanced productivity, and business growth.
                 </p>
                 <a
                   href="#"
-                  className="inline-block bg-[#e3364d] text-white px-6 py-3 rounded-md font-semibold hover:bg-[#f07e8d] transition-colors"
+                  className="inline-block bg-[#2DB1A3] text-white px-6 py-3 rounded-md font-semibold hover:bg-[#32ccbd] transition-colors"
                   aria-label="Learn more about our services"
                 >
                   Learn More

@@ -9,7 +9,7 @@ import servicesShape2 from './images/services/services-shape-2.png';
 
 const ServicesCard = () => {
   return (
-    <section className="services-area bg-[#2f2f2f] pt-8 pb-24 relative overflow-hidden">
+    <section className="bg-[#2f2f2f] pt-8 pb-24 relative overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="text-center mb-10">
           <span className="text-[#2DB1A3] font-semibold text-lg block mb-3">OUR SOLUTIONS & SERVICES</span>

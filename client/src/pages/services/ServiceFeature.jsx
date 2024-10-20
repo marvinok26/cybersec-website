@@ -23,7 +23,7 @@ const ServiceFeature = () => {
     <div ref={sectionRef}>
       {/* Feature Section */}
       <section className="feature-home2 mt-4 pb-[50px]">
-        <div className="container mx-auto">
+        <div className="py-4 px-8 container mx-auto">
           <div className="row mb-8">
             <div className="col-lg-12">
               <div className="heading-title text-center max-w-[680px] mx-auto mb-10">
@@ -73,7 +73,7 @@ const ServiceFeature = () => {
               </div>
 
               {/* Call to Action Button */}
-              <a href="#" className="btn btn-[#e3364d] border-solid border-gray-300 border mt-6 py-2 px-4 rounded-md text-white bg-[#e3364d] hover:bg-[#fa7385] transition">
+              <a href="#" className="btn btn-[#e3364d] border-solid border-gray-300 border mt-6 py-2 px-4 rounded-md text-white bg-[#2DB1A3] hover:bg-[#32cbbc] transition">
                 <span>Get Free Consultation</span>
               </a>
             </div>
