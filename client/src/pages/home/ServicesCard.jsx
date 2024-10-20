@@ -23,7 +23,7 @@ const ServicesCard = () => {
         </div>
 
         {/* Services Cards */}
-        <div className="flex flex-wrap justify-center gap-4">
+        <div className="flex flex-wrap ">
           {[
             {
               img: services1,

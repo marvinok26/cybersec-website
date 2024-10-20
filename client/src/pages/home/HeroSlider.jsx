@@ -51,7 +51,7 @@ const HeroSlider = () => {
   }, []);
 
   return (
-    <div className="relative overflow-hidden h-[600px] md:h-[800px] mt-[5rem]">
+    <div className="relative overflow-hidden h-[600px] md:h-[800px]">
       {slides.map((slide, index) => (
         <div
           key={slide.id}
@@ -62,30 +62,30 @@ const HeroSlider = () => {
           <img
             src={slide.bgImage}
             alt={`Technology Solutions Slide ${slide.id}`}
-            className="object-cover w-full h-full animate-paper-plane"
+            className="object-cover w-full h-full"
           />
           <div className="absolute inset-0 bg-black opacity-40"></div>
-          <div className="absolute inset-0 flex items-center justify-start px-4 sm:px-10 mt-[10rem] md:mt-[15rem]">
-            <div className="text-white max-w-full sm:max-w-2xl lg:max-w-4xl space-y-6 z-20">
+          <div className="absolute inset-0 flex items-center justify-start px-4 sm:px-10 mt-[10rem] md:mt-[10rem]">
+            <div className="text-white w-[750px] space-y-6 z-20">
               <span className="block text-lg sm:text-xl font-semibold text-[#2DB1A3]">
-                {slide.subtitle.split('').map((letter, i) => (
+                {slide.subtitle.split(' ').map((word, i) => (
                   <span
                     key={i}
-                    className="inline-block opacity-0 animate-slide-in"
-                    style={{ animationDelay: `${i * 0.03}s` }}
+                    className="inline-block opacity-0 animate-slide-in whitespace-nowrap"
+                    style={{ animationDelay: `${i * 0.1}s` }}
                   >
-                    {letter}
+                    {word}&nbsp;
                   </span>
                 ))}
               </span>
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-snug">
-                {slide.title.split('').map((letter, i) => (
+                {slide.title.split(' ').map((word, i) => (
                   <span
                     key={i}
-                    className="inline-block opacity-0 animate-slide-in"
-                    style={{ animationDelay: `${i * 0.03}s` }}
+                    className="inline-block opacity-0 animate-slide-in whitespace-nowrap"
+                    style={{ animationDelay: `${i * 0.1}s` }}
                   >
-                    {letter}
+                    {word}&nbsp;
                   </span>
                 ))}
               </h1>
