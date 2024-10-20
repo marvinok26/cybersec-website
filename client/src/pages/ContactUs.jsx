@@ -44,9 +44,9 @@ const ContactUs = () => {
   return (
     <>
       {/* Map Section */}
-      <div className="map-sec mt-[5rem]">
+      <section className="map-sec mt-[5rem]">
         <iframe
-          className="w-full md:h-[400px] h-[200px]"
+          className="w-full h-[200px] md:h-[400px]"
           frameBorder="0"
           scrolling="no"
           marginHeight="0"
@@ -55,7 +55,7 @@ const ContactUs = () => {
           title="Google Maps Location for Alamat Group Limited"
           loading="lazy"
         />
-      </div>
+      </section>
 
       {/* Contact Details Section */}
       <div className="py-10">
@@ -64,7 +64,7 @@ const ContactUs = () => {
             <div className="w-full max-w-[68rem] bg-[#2DB1A3] rounded-lg p-8 shadow-lg">
               <div className="flex justify-between flex-wrap">
                 {contactDetails.map(({ icon, title, info }, index) => (
-                  <div key={index} className="flex items-center mb-6 w-full md:w-1/3">
+                  <div key={index} className="flex items-center mb-6 w-full sm:w-1/2 lg:w-1/3">
                     <div className="p-4 bg-gray-200 rounded-full">{icon}</div>
                     <div className="ml-4">
                       <h6 className="font-semibold text-lg text-white">{title}</h6>
@@ -82,10 +82,10 @@ const ContactUs = () => {
               <div className="flex flex-col lg:flex-row justify-between space-y-6 lg:space-y-0 lg:mx-12">
 
                 {/* Social Icons Section */}
-                <div className="lg:w-1/3 ml-[4rem] mr-[18rem]">
+                <div className="lg:w-1/3">
                   <div className="title-area mb-6">
                     <span className="sub-title flex items-center text-[1rem] text-[#e3364d]">
-                      <img src="assets/img/icon/title_left.svg" alt="shape" className="mr-2" />
+                      <img src="assets/img/icon/title_left.svg" alt="Contact Us Icon" className="mr-2" />
                       Contact Us
                     </span>
                     <h2 className="sec-title style2 text-4xl my-3">Get In Touch</h2>
@@ -100,6 +100,7 @@ const ContactUs = () => {
                           key={index}
                           to={url}
                           className="p-3 rounded-lg border border-solid border-slate-300 hover:bg-[#2DB1A3] text-[#e3364d] hover:text-[#ece7e7]"
+                          aria-label={`Link to ${icon.type.name}`} // Improved SEO for social links
                         >
                           {icon}
                         </Link>
@@ -109,7 +110,7 @@ const ContactUs = () => {
                 </div>
 
                 {/* Contact Form Section */}
-                <div className="lg:w-2/3 mr-[4rem]">
+                <div className="lg:w-2/3">
                   <div className="contact-form bg-white p-12 rounded-lg shadow-lg max-w-lg mx-auto">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       {['Your Name', 'Your Email', 'Phone Number'].map((placeholder, index) => (
@@ -146,11 +147,6 @@ const ContactUs = () => {
                       <div className="form-group col-span-2 mb-0">
                         <button className="global-btn w-full py-3 bg-[#2DB1A3] text-white rounded-lg hover:bg-[#3be7d6]">
                           Send Now
-                          <img
-                            src="assets/img/icon/right-icon.svg"
-                            alt="Send"
-                            className="inline ml-2"
-                          />
                         </button>
                       </div>
                     </div>
