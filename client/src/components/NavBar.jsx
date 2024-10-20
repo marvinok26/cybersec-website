@@ -21,7 +21,7 @@ import {
   SquaresPlusIcon,
   XMarkIcon,
 } from '@heroicons/react/24/outline';
-import { ChevronDownIcon } from '@heroicons/react/20/solid';
+import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid';
 
 const products = [
   { name: 'Office Automation', desc: 'Seamless automation for improved performance and collaboration', href: '/services', icon: ChartPieIcon },
@@ -37,13 +37,9 @@ export default function NavBar() {
   const [currentPage, setCurrentPage] = useState('/');
   let closeTimeout;
 
-  useEffect(() => {
-    setCurrentPage(window.location.pathname);
-  }, []);
+  useEffect(() => setCurrentPage(window.location.pathname), []);
 
-  const handleMouse = (state) => {
-    state ? clearTimeout(closeTimeout) || setServicesOpen(true) : closeTimeout = setTimeout(() => setServicesOpen(false), 200);
-  };
+  const handleMouse = (state) => state ? clearTimeout(closeTimeout) || setServicesOpen(true) : closeTimeout = setTimeout(() => setServicesOpen(false), 200);
 
   const getLinkClass = (page) => `text-sm font-semibold leading-6 ${currentPage === page ? 'text-[#2DB1A3]' : 'text-[#e3364d]'} hover:text-[#2DB1A3]`;
 
@@ -91,9 +87,9 @@ export default function NavBar() {
         </PopoverGroup>
       </nav>
 
-      <Dialog open={mobileMenuOpen} onClose={() => setMobileMenuOpen(false)} className="lg:hidden">
+      <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
         <div className="fixed inset-0 z-10" />
-        <DialogPanel className="fixed inset-0 z-10 w-full overflow-y-auto bg-white px-4 py-6">
+        <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <a href="/" className="-m-1.5 p-1.5">
               <img alt="Alamat Group Limited Logo" src={logo1} className="h-8 w-auto" loading="lazy" />
