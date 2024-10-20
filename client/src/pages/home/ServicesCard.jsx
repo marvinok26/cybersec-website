@@ -87,14 +87,6 @@ const ServicesCard = () => {
           </Link>
         </div>
       </div>
-
-      {/* Decorative Shapes */}
-      <div className="absolute top-20 left-5 animate-bounce">
-        <img src={servicesShape1} alt="Decorative shape" width={230} height={272} />
-      </div>
-      <div className="absolute top-10 right-5 animate-spin-slow">
-        <img src={servicesShape2} alt="Decorative shape" width={140} height={125} />
-      </div>
     </section>
   );
 };
