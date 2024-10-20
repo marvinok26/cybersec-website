@@ -51,16 +51,20 @@ const About = () => {
   ];
 
   const cardData = [
-    { icon: <FaUserTie className='text-[#2DB1A3]' />, title: 'Passionate',
+    {
+      icon: <FaUserTie className='text-[#2DB1A3]' />, title: 'Passionate',
       description: 'Our team is committed to bringing enthusiasm and creativity to every project, delivering innovative technology solutions that truly make a difference for our clients.'
     },
-    { icon: <FaHandsHelping className='text-[#2DB1A3]' />, title: 'Respectful',
+    {
+      icon: <FaHandsHelping className='text-[#2DB1A3]' />, title: 'Respectful',
       description: 'We value every client relationship, listening carefully to your needs and treating each project with the utmost respect and professionalism to build lasting partnerships'
     },
-    { icon: <FaCogs className='text-[#2DB1A3]' />, title: 'Ownership',
+    {
+      icon: <FaCogs className='text-[#2DB1A3]' />, title: 'Ownership',
       description: 'We believe in taking responsibility for our work, ensuring quality and accountability in everything we do to deliver the best results for our clients'
     },
-    { icon: <FaWrench className='text-[#2DB1A3]' />, title: 'Client Services',
+    {
+      icon: <FaWrench className='text-[#2DB1A3]' />, title: 'Client Services',
       description: 'Our goal is to provide exceptional support tailored to your needs, guiding you through challenges and ensuring you have the best technology solutions available'
     },
   ];
@@ -68,14 +72,17 @@ const About = () => {
   return (
     <div className="relative mt-[5rem] w-full">
       {/* Main About Us Section */}
-      <div className="bg-[#1c1c1c] w-full">
+      <div className="bg-[#1c1c1c]">
         {/* Title */}
-        <h1 className="text-[2.5rem] font-extrabold mb-6 text-white text-center">
-          We specialize in delivering <span className='text-[#e3364d]'>Comprehensive</span> IT integration, Cybersecurity, and Cloud solutions.
-        </h1>
+        <div className="w-[700px] sm:w-[600px]">
+          <h1 className="text-[2.5rem] font-extrabold mb-6 text-white text-left">
+            We specialize in delivering <span className='text-[#e3364d]'>Comprehensive</span> IT integration, Cybersecurity, and Cloud solutions.
+          </h1>
+        </div>
+
 
         {/* Images in a row with different vertical placements */}
-        <div className="flex flex-row gap-4 justify-center">
+        <div className="flex flex-row gap-4 justify-start">
           {images.map((img, index) => (
             <div key={index} className={`h-72 w-1/5 mt-[${img.marginTop}]`}>
               <img src={img.src} alt={img.alt} className="w-full h-full object-cover" />
@@ -85,7 +92,7 @@ const About = () => {
       </div>
 
       <div className="w-full my-8">
-        <div className="flex flex-wrap justify-center">
+        <div className="flex flex-wrap">
           {/* About Us Content */}
           <div className="w-full md:w-1/2 xl:w-1/3">
             <div className="px-6 pt-9">
@@ -123,21 +130,21 @@ const About = () => {
           {/* About Us Counter */}
           <div className="w-full xl:w-1/3" ref={counterRef}>
             <div className="px-6 pt-10">
-              <h3 className="text-3xl font-bold mb-3 text-center">
+              <h3 className="text-3xl font-bold mb-3 text-left">
                 We’ve <a href="#" className="text-[#e3364d]">25+ Years</a> Of Experience <br /> In Tech Services
               </h3>
-              <p className="mb-10 text-center">
+              <p className="mb-10 text-left">
                 Helping businesses thrive by providing reliable technology solutions and dedicated support to meet their unique needs
               </p>
               <div className="h-px bg-gray-300 mb-16"></div>
-              <div className="flex justify-around">
-                <div className="text-center">
+              <div className="flex justify-between">
+                <div className="text-center w-1/2">
                   <div className="text-4xl font-bold">
                     {inView && <CountUp start={0} end={56} duration={3} />}
                   </div>
                   <p className="mt-2">Satisfied Customers</p>
                 </div>
-                <div className="text-center">
+                <div className="text-center w-1/2">
                   <div className="text-4xl font-bold">
                     {inView && <CountUp start={0} end={8} duration={3} />}
                   </div>
@@ -152,7 +159,7 @@ const About = () => {
       {/* Mission & Vision */}
       <div className="bg-[#1c1c1c] text-white py-16 w-full">
         <div className="container mx-auto px-6 md:px-12 lg:px-20">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-16">
+          <div className="flex flex-col md:flex-row justify-between items-start gap-16">
             {/* Mission Section */}
             <div className="md:w-1/2">
               <h2 className="text-4xl font-extrabold text-left mb-6 text-[#e3364d]">Our Mission</h2>
@@ -175,7 +182,7 @@ const About = () => {
       {/* Cards Section */}
       <div className="py-2">
         <div className="w-full mx-auto">
-          <div className="flex flex-wrap justify-center">
+          <div className="flex flex-wrap justify-start">
             {cardData.map((card, index) => (
               <div key={index} className="w-full sm:w-1/2 lg:w-1/4 px-2">
                 <div className="border border-solid border-gray-400 px-[32px] py-[40px] relative overflow-hidden group h-[320px] flex flex-col justify-between">
