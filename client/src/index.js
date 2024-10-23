@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
 import './index.css';
+import Loader from './components/Loader.jsx';
+
 
 // Lazy load components for better performance
 const App = lazy(() => import('./components/App.jsx'));
@@ -17,12 +19,12 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: (
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<div className="flex items-center justify-center min-h-screen"><Loader /></div>}>
         <App />
       </Suspense>
     ),
     errorElement: (
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<div className="flex items-center justify-center min-h-screen"><Loader /></div>}>
         <ErrorPage />
       </Suspense>
     ),
