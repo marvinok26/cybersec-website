@@ -70,7 +70,7 @@ const About = () => {
       {/* Main About Us Section */}
       <div className="bg-[#1c1c1c] mt-[5rem] relative overflow-hidden h-[600px] md:h-[100vh]">
         {/* Title */}
-        <h1 className="text-[2.5rem] font-extrabold mb-6 text-white text-left w-[600px] py-4 sm:mt-[10rem] sm:mb-[10rem]">
+        <h1 className="text-[2.5rem] font-extrabold mb-6 text-white text-left w-[600px] py-4">
           We specialize in delivering <span className='text-[#e3364d]'>Comprehensive</span> IT integration, Cybersecurity, and Cloud solutions.
         </h1>
 
