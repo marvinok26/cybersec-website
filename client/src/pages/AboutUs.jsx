@@ -66,11 +66,11 @@ const About = () => {
   ];
 
   return (
-    <div className="relative mt-[5rem]">
+    <div className="relative">
       {/* Main About Us Section */}
-      <div className="bg-[#1c1c1c] mx-auto max-w-[700px]">
+      <div className="bg-[#1c1c1c] mt-[5rem] relative overflow-hidden h-[600px] md:h-[100vh]">
         {/* Title */}
-        <h1 className="text-[2.5rem] font-extrabold mb-6 text-white text-center">
+        <h1 className="text-[2.5rem] font-extrabold mb-6 text-white text-left w-[600px] py-4 sm:mt-[10rem] sm:mb-[10rem]">
           We specialize in delivering <span className='text-[#e3364d]'>Comprehensive</span> IT integration, Cybersecurity, and Cloud solutions.
         </h1>
 
@@ -123,10 +123,10 @@ const About = () => {
           {/* About Us Counter */}
           <div className="w-full xl:w-1/3" ref={counterRef}>
             <div className="px-6 pt-10">
-              <h3 className="text-3xl font-bold mb-3 text-center">
-                We’ve <a href="#" className="text-[#e3364d]">25+ Years</a> Of Experience <br /> In Tech Services
+              <h3 className="text-3xl font-bold mb-3 text-left">
+                We’ve <a href="#" className="text-[#e3364d]">25+ Years</a> Of Experience In Tech Services
               </h3>
-              <p className="mb-10 text-center">
+              <p className="mb-10 text-left">
                 Helping businesses thrive by providing reliable technology solutions and dedicated support to meet their unique needs
               </p>
               <div className="h-px bg-gray-300 mb-16"></div>
@@ -151,8 +151,8 @@ const About = () => {
 
       {/* Mission & Vision */}
       <div className="bg-[#1c1c1c] text-white py-16">
-        <div className="container mx-auto px-6 md:px-12 lg:px-20 max-w-[700px]">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-16">
+        <div className="container mx-auto px-6 md:px-12 lg:px-20">
+          <div className="flex flex-col md:flex-row gap-16">
             {/* Mission Section */}
             <div className="md:w-1/2">
               <h2 className="text-4xl font-extrabold text-left mb-6 text-[#e3364d]">Our Mission</h2>
